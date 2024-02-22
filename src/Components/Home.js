@@ -101,7 +101,7 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <div style={{ overflow: 'hidden'}}>
+                                <div style={{ overflow: 'hidden' }}>
                                     <img src='../images/AnhCatTC/san-pham-noi-bat/sp-1.jpg' alt='img' className='img-hover' />
                                 </div>
                                 <p className='mb-1'>Giường châu âu</p>
@@ -130,7 +130,9 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' />
+                                <div style={{ overflow: 'hidden' }}>
+                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' className='img-hover' />
+                                </div>
                                 <p className='mb-1'>Bàn làm việc</p>
                             </a>
                             <div>
@@ -157,7 +159,9 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' />
+                                <div style={{ overflow: 'hidden' }}>
+                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' className='img-hover' />
+                                </div>
                                 <p className='mb-1'>Tủ quần áo</p>
                             </a>
                             <div>
@@ -184,7 +188,9 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' />
+                                <div style={{ overflow: 'hidden' }}>
+                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' className='img-hover' />
+                                </div>
                                 <p className='mb-1'>Kệ để đồ</p>
                             </a>
                             <div>
@@ -215,11 +221,65 @@ function Home() {
                             </button>
                         </div>
                     </div>
+
                 </div>
-
-
             </div>
-            <div className='Product'>
+            <div className='About w-100 position-relative'>
+                <div>
+                    <div className='w-100'>
+                        <img src='../images/AnhCatTC/ve-chung-toi/bg-about-us.jpg' className='w-100 img' />
+                    </div>
+                    <div className='box-container position-absolute top-0 start-50 translate-middle-x'>
+                        <h4 className='mt-5'>Về chúng tôi</h4>
+                        <div>
+                            <div className='row mt-5'>
+                                <div className='col-md-6'>
+                                    <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi.jpg' className='w-100 h-100' />
+                                </div>
+                                <div className='col-md-6'>
+                                    <div className='row'>
+                                        <p>
+                                            NỘI THẤT 
+                                            <span> HOANG HOAN</span>
+                                            <br />
+                                            uy tín song hành chất lượng
+                                        </p>
+                                        <p>
+                                            Nội thất của
+                                            <span> HOANG HOANG </span>
+                                            chúng tôi tự hào là đứa con tinh thần ra đời sau hơn 30 năm hoạt động trong lĩnh vực kinh doanh đồ gỗ nội thất với thương hiệu ĐỒ GỖ HOÀNG HOAN nổi tiếng.
+                                        </p>
+                                        <p>
+                                        Tài nguyên của chúng tôi là đội ngũ kiến trúc sư tốt nghiệp ĐH Kiên Trúc Hà Nội với nhiều năm kinh nghiệm, luôn tràn đầy nhiệt huyết và sức sáng tạo của tuổi trẻ. Thế mạnh của chúng tôi là sở hữu xưởng nội thất hơn 10.000m2 tại Hà Nội sản xuất đa dạng các sản phẩm với giá cả luôn cạnh tranh.
+                                        </p>
+                                    </div>
+                                    <div className='row'>
+                                        <div className='col-md-3'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg' className='w-100 h-100'/>
+                                            </div>
+                                        </div>
+                                        <div className='col-md-3'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg' className='w-100 h-100'/>
+                                            </div>
+                                        </div>
+                                        <div className='col-md-3'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg' className='w-100 h-100'/>
+                                            </div>
+                                        </div>
+                                        <div className='col-md-3'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </>
