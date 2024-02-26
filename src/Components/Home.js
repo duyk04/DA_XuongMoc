@@ -224,6 +224,8 @@ function Home() {
 
                 </div>
             </div>
+
+            {/* About */}
             <div className='About w-100 position-relative'>
                 <div>
                     <div className='w-100'>
@@ -271,7 +273,7 @@ function Home() {
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100' />
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100' alt='img' />
                                             </div>
                                         </div>
                                     </div>
@@ -295,7 +297,7 @@ function Home() {
                                         </div>
                                     </div>
                                     <div className='col-md-6'>
-                                    <div className='item d-flex py-4'>
+                                        <div className='item d-flex py-4'>
                                             <div>
                                                 <img src='../images/AnhCatTC/ve-chung-toi/san-pham.jpg' alt='img' />
                                             </div>
@@ -311,7 +313,7 @@ function Home() {
                                 </div>
                                 <div className='row'>
                                     <div className='col-md-6'>
-                                    <div className='item d-flex py-4'>
+                                        <div className='item d-flex py-4'>
                                             <div>
                                                 <img src='../images/AnhCatTC/ve-chung-toi/chat-luong.jpg' alt='img' />
                                             </div>
@@ -325,7 +327,7 @@ function Home() {
                                         </div>
                                     </div>
                                     <div className='col-md-6'>
-                                    <div className='item d-flex py-4'>
+                                        <div className='item d-flex py-4'>
                                             <div>
                                                 <img src='../images/AnhCatTC/ve-chung-toi/chinh-sach.jpg' alt='img' />
                                             </div>
@@ -340,10 +342,56 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {/* New */}
+            <div className='New position-relative'>
+                <div className='box-container position-absolute top-0 start-50 translate-middle-x'>
+                    <h4 className='mt-5'>Tin tức</h4>
+                    <div className='row mt-5'>
+                        <div className='col-md-7'>
+                            <div className='position-relative'>
+                                <div className='img'>
+                                    <a href='#'>
+                                        <img src='../images/AnhCatTC/tin-tuc/tintuc.jpg' alt='img' className='w-100 h-100' />
+                                    </a>
+                                </div>
+                                <div className='box-content position-absolute bottom-0'>
+                                    <div className='m-4'>
+                                        <p className='text-start text-white'>Cách chọn Sofa cho phòng khách nhà bạn thêm phần sang trọng</p>
+                                        <p>Không phải ai trong chúng ta cũng biết cách chọn màu sofa cho phòng khách trở nên sang trọng và đẹp mắt hơn. Tuy nhiên, đây là yếu tố quyết định phần lớn đến tính thẩm mỹ của toàn bộ ngôi nhà.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-md-5'>
+                            <div className='row'>
+                                <div className='col-md-5'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-5.jpg' className='w-100' />
+                                </div>
+                            </div>
+                            <div className='row'>
+                                <div className='col-md-5'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-6.jpg' className='w-100' />
+                                </div>
+                            </div>
+                            <div className='row'>
+                                <div className='col-md-5'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-7.jpg' className='w-100' />
+                                </div>
+                            </div>
+                            
+                            
+                            
 
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </>
