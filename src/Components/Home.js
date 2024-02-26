@@ -239,7 +239,7 @@ function Home() {
                                 <div className='col-md-6'>
                                     <div className='row'>
                                         <p>
-                                            NỘI THẤT 
+                                            NỘI THẤT
                                             <span> HOANG HOAN</span>
                                             <br />
                                             uy tín song hành chất lượng
@@ -250,33 +250,97 @@ function Home() {
                                             chúng tôi tự hào là đứa con tinh thần ra đời sau hơn 30 năm hoạt động trong lĩnh vực kinh doanh đồ gỗ nội thất với thương hiệu ĐỒ GỖ HOÀNG HOAN nổi tiếng.
                                         </p>
                                         <p>
-                                        Tài nguyên của chúng tôi là đội ngũ kiến trúc sư tốt nghiệp ĐH Kiên Trúc Hà Nội với nhiều năm kinh nghiệm, luôn tràn đầy nhiệt huyết và sức sáng tạo của tuổi trẻ. Thế mạnh của chúng tôi là sở hữu xưởng nội thất hơn 10.000m2 tại Hà Nội sản xuất đa dạng các sản phẩm với giá cả luôn cạnh tranh.
+                                            Tài nguyên của chúng tôi là đội ngũ kiến trúc sư tốt nghiệp ĐH Kiên Trúc Hà Nội với nhiều năm kinh nghiệm, luôn tràn đầy nhiệt huyết và sức sáng tạo của tuổi trẻ. Thế mạnh của chúng tôi là sở hữu xưởng nội thất hơn 10.000m2 tại Hà Nội sản xuất đa dạng các sản phẩm với giá cả luôn cạnh tranh.
                                         </p>
                                     </div>
                                     <div className='row'>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg' className='w-100 h-100'/>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg' className='w-100 h-100'/>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg' className='w-100 h-100'/>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100'/>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100' />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <h4 className='mt-3'>Tại sao nên chọn hoàng hoan?</h4>
+                            <div>
+                                <div className='row mt-2 mb-4'>
+                                    <div className='col-md-6'>
+                                        <div className='item d-flex py-4'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/chinh-sach.jpg' alt='img' />
+                                            </div>
+                                            <div className='text-start ps-4 d-flex align-items-center'>
+                                                <div>
+                                                    <h5>Chính sách giá</h5>
+                                                    <br />
+                                                    <p className='my-0'>Tốt nhất và công khai giá trên website</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-6'>
+                                    <div className='item d-flex py-4'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/san-pham.jpg' alt='img' />
+                                            </div>
+                                            <div className='text-start ps-4 d-flex align-items-center'>
+                                                <div>
+                                                    <h5>Sản xuất</h5>
+                                                    <br />
+                                                    <p className='my-0'>Trực tiếp sản xuất bởi đội ngũ nhân viên hàng đầu</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='row'>
+                                    <div className='col-md-6'>
+                                    <div className='item d-flex py-4'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/chat-luong.jpg' alt='img' />
+                                            </div>
+                                            <div className='text-start ps-4 d-flex align-items-center'>
+                                                <div>
+                                                    <h5>Chất lượng</h5>
+                                                    <br />
+                                                    <p className='my-0'>Cam kết chất lượng và tiến độ thi công</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-6'>
+                                    <div className='item d-flex py-4'>
+                                            <div>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/chinh-sach.jpg' alt='img' />
+                                            </div>
+                                            <div className='text-start ps-4 d-flex align-items-center'>
+                                                <div>
+                                                    <h5>Bảo hành</h5>
+                                                    <br />
+                                                    <p className='my-0'>Dịch vụ bảo hành tốt nhất khu vực</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

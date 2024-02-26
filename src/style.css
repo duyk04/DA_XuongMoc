@@ -174,3 +174,28 @@ p {
     color: #fff;
     font-family: Gotham-Ultra;
 }
+
+/* Tại sao chọn hoàng hoan */
+
+.About .item {
+    background-color: #fff;
+}
+.About .item h5 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #bd945f;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.About .item p{
+    font-size: 0.9rem; 
+    text-align: left;
+    color: #686868;
+    font-family: Gotham-Medium;
+}
+.About .item img{
+    padding: 0 0 0 32px;
+}
