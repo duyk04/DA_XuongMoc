@@ -351,7 +351,7 @@ function Home() {
             <div className='New position-relative'>
                 <div className='box-container position-absolute top-0 start-50 translate-middle-x'>
                     <h4 className='mt-5'>Tin tức</h4>
-                    <div className='row mt-5'>
+                    <div className='row mt-5' style={{height:600}}>
                         <div className='col-md-7'>
                             <div className='position-relative'>
                                 <div className='img'>
@@ -368,20 +368,35 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-5'>
-                            <div className='row'>
+                        <div className='col-md-5 h-100' >
+                            <div className='row' style={{height:"33%"}} >
                                 <div className='col-md-5'>
                                     <img src='../images/AnhCatTC/tin-tuc/tintuc-5.jpg' className='w-100' />
                                 </div>
+                                <div className='col-md-7'>
+                                    <h3>Trang trí phòng khách cho thêm năng động</h3>
+                                    <br/>
+                                    <p>Không cần quá đầu tư nhiều tiền vào những món đồ sang trọng cho việc trang trí phòng khách. Bạn vẫn có thể sở hữu không gian phòng khách với những mẹo không phải ai cũng sẵn sàng chi cho bạn.</p>
+                                </div>
                             </div>
-                            <div className='row'>
+                            <div className='row' style={{height:"33%"}}>
                                 <div className='col-md-5'>
                                     <img src='../images/AnhCatTC/tin-tuc/tintuc-6.jpg' className='w-100' />
                                 </div>
+                                <div className='col-md-7'>
+                                    <h3>25+ mẫu giường ngủ hộc kéo cho phòng nhỏ</h3>
+                                    <br/>
+                                    <p>Sự thật chúng ta dành hết 1/3 cuộc đời chỉ để ngủ, vì thế tạo được một giấc ngủ là một điều đặc biệt quan trọng. Giường ngủ hộc kéo chính là giải pháp thông minh giúp đem lại một giấc ngủ sâu.</p>
+                                </div>
                             </div>
-                            <div className='row'>
+                            <div className='row' style={{height:"33%"}}>
                                 <div className='col-md-5'>
                                     <img src='../images/AnhCatTC/tin-tuc/tintuc-7.jpg' className='w-100' />
+                                </div>
+                                <div className='col-md-7'>
+                                    <h3>Top 10 mẫu nội thất chung cư 1 phòng ngủ</h3>
+                                    <br/>
+                                    <p>Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí “hạn hẹp”. Thiết kế nội thất chung cư một phòng ngủ chính là giải pháp tối ưu nhất mang lại một không gian sống hoàn hảo và hiện đại.</p>
                                 </div>
                             </div>
                             
