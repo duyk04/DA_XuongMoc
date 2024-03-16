@@ -207,6 +207,7 @@ p {
 
 /* New */
 
+
 .New h4 {
     text-transform: uppercase;
     font-family: Gotham-Ultra;
@@ -227,22 +228,106 @@ p {
     max-width: 10rem;
     border-top: 0.6rem solid #bd945f;
 }
+
 .New .box-content {
     background-color: #bd945f;
     opacity: 0.9;
 }
-.New .box-container .img{
+
+.New .box-container .img {
     height: 33rem !important;
 }
-.New .box-content p:first-child{
+
+.New .box-content p:first-child {
     font-family: Gotham-Medium;
     font-size: 1.3rem;
 }
-.New .box-content p:last-child{
+
+.New .box-content p:last-child {
     font-family: Gotham-Medium;
     font-size: 1rem;
     text-align: justify;
 }
-.New .box-container img{
+
+.New .box-container img {
     object-fit: cover;
+}
+
+.New .text-more {
+    font-family: Gotham-Medium;
+    font-size: 1.5rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.New-second h3 {
+    font-family: Gotham-Medium;
+    font-size: 1.5rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.New-second p {
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Đối tác */
+
+.Doi-tac h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #1c1c1e;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.Doi-tac h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    max-width: 10rem;
+    border-top: 0.6rem solid #bd945f;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(16.66%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-16.66%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
 }

@@ -3,8 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../style.css'
+import '../js/main.js'
 
 function Home() {
+
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary py-0" style={{ height: 110, }}>
@@ -101,8 +103,10 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <div style={{ overflow: 'hidden' }}>
-                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-1.jpg' alt='img' className='img-hover' />
+                                <div className='d-flex justify-content-center'>
+                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-1.jpg' alt='img' className='img-hover' />
+                                    </div>
                                 </div>
                                 <p className='mb-1'>Giường châu âu</p>
                             </a>
@@ -130,8 +134,10 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <div style={{ overflow: 'hidden' }}>
-                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' className='img-hover' />
+                                <div className='d-flex justify-content-center'>
+                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' className='img-hover' />
+                                    </div>
                                 </div>
                                 <p className='mb-1'>Bàn làm việc</p>
                             </a>
@@ -159,8 +165,10 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <div style={{ overflow: 'hidden' }}>
-                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' className='img-hover' />
+                                <div className='d-flex justify-content-center'>
+                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' className='img-hover' />
+                                    </div>
                                 </div>
                                 <p className='mb-1'>Tủ quần áo</p>
                             </a>
@@ -188,8 +196,10 @@ function Home() {
                         </div>
                         <div className='col-md-3'>
                             <a href='#'>
-                                <div style={{ overflow: 'hidden' }}>
-                                    <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' className='img-hover' />
+                                <div className='d-flex justify-content-center'>
+                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' className='img-hover' />
+                                    </div>
                                 </div>
                                 <p className='mb-1'>Kệ để đồ</p>
                             </a>
@@ -348,10 +358,10 @@ function Home() {
 
             </div>
             {/* New */}
-            <div className='New position-relative'>
-                <div className='box-container position-absolute top-0 start-50 translate-middle-x'>
+            <div className='New position-relative w-100 d-flex justify-content-center'>
+                <div className='box-container '>
                     <h4 className='mt-5'>Tin tức</h4>
-                    <div className='row mt-5' style={{height:600}}>
+                    <div className='row mt-5'>
                         <div className='col-md-7'>
                             <div className='position-relative'>
                                 <div className='img'>
@@ -364,51 +374,188 @@ function Home() {
                                         <p className='text-start text-white'>Cách chọn Sofa cho phòng khách nhà bạn thêm phần sang trọng</p>
                                         <p>Không phải ai trong chúng ta cũng biết cách chọn màu sofa cho phòng khách trở nên sang trọng và đẹp mắt hơn. Tuy nhiên, đây là yếu tố quyết định phần lớn đến tính thẩm mỹ của toàn bộ ngôi nhà.</p>
                                     </div>
-
                                 </div>
+                            </div>
+                            <div className='row'>
+                                <a href='#'>
+                                    <p className='text-uppercase text-more mt-5'>Xem thêm <i class="fa-solid fa-arrow-right fa-xl"></i></p>
+                                </a>
                             </div>
                         </div>
-                        <div className='col-md-5 h-100' >
-                            <div className='row' style={{height:"33%"}} >
-                                <div className='col-md-5'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-5.jpg' className='w-100' />
+                        <div className='col-md-5 New-second' >
+                            <div className='row mb-4' style={{ height: 200 }} >
+                                <div className='col-md-5 img-2'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_1.png' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
-                                    <h3>Trang trí phòng khách cho thêm năng động</h3>
-                                    <br/>
-                                    <p>Không cần quá đầu tư nhiều tiền vào những món đồ sang trọng cho việc trang trí phòng khách. Bạn vẫn có thể sở hữu không gian phòng khách với những mẹo không phải ai cũng sẵn sàng chi cho bạn.</p>
+                                    <h3 >Trang trí phòng khách cho thêm năng động</h3>
+                                    <p >Không cần quá đầu tư nhiều tiền vào những món đồ sang trọng cho việc trang trí phòng khách. Bạn vẫn có thể sở hữu không gian phòng khách với những mẹo không phải ai cũng sẵn sàng chi cho bạn.</p>
                                 </div>
                             </div>
-                            <div className='row' style={{height:"33%"}}>
-                                <div className='col-md-5'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-6.jpg' className='w-100' />
+                            <div className='row mb-4' style={{ height: 200 }}>
+                                <div className='col-md-5 img-2'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_2.png' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
-                                    <h3>25+ mẫu giường ngủ hộc kéo cho phòng nhỏ</h3>
-                                    <br/>
-                                    <p>Sự thật chúng ta dành hết 1/3 cuộc đời chỉ để ngủ, vì thế tạo được một giấc ngủ là một điều đặc biệt quan trọng. Giường ngủ hộc kéo chính là giải pháp thông minh giúp đem lại một giấc ngủ sâu.</p>
+                                    <h3 >25+ mẫu giường ngủ hộc kéo cho phòng nhỏ</h3>
+                                    <p >Sự thật chúng ta dành hết 1/3 cuộc đời chỉ để ngủ, vì thế tạo được một giấc ngủ là một điều đặc biệt quan trọng. Giường ngủ hộc kéo chính là giải pháp thông minh giúp đem lại một giấc ngủ sâu.</p>
                                 </div>
                             </div>
-                            <div className='row' style={{height:"33%"}}>
-                                <div className='col-md-5'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc-7.jpg' className='w-100' />
+                            <div className='row mb-4' style={{ height: 200 }}>
+                                <div className='col-md-5 img-2'>
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_3.png' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
-                                    <h3>Top 10 mẫu nội thất chung cư 1 phòng ngủ</h3>
-                                    <br/>
-                                    <p>Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí “hạn hẹp”. Thiết kế nội thất chung cư một phòng ngủ chính là giải pháp tối ưu nhất mang lại một không gian sống hoàn hảo và hiện đại.</p>
+                                    <h3 >Top 10 mẫu nội thất chung cư 1 phòng ngủ</h3>
+                                    <p >Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí “hạn hẹp”...</p>
                                 </div>
                             </div>
-                            
-                            
-                            
 
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+            {/* Đối tác */}
+
+            <div className='Doi-tac position-relative w-100 d-flex justify-content-center'>
+                <div className='box-container'>
+                    <h4 className='mt-5'>Đối tác</h4>
+                    <div>
+                        <div className="container text-center my-3">
+                            <div className="row mx-auto my-auto justify-content-center">
+                                <div id="recipeCarousel" className="carousel slide" data-bs-ride="carousel">
+                                    <div className="carousel-inner" role="listbox">
+                                        <div className="carousel-item active">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/CB997E/333333?text=1"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/B7B7A4/333333?text=4"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 4</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="col-md-2">
+                                                <div className="card">
+                                                    <div className="card-img">
+                                                        <img
+                                                            src="https://via.placeholder.com/700x500.png/6B705C/eeeeee?text=6"
+                                                            className="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div className="card-img-overlay">Slide 6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a
+                                        className="carousel-control-prev bg-transparent w-aut"
+                                        href="#recipeCarousel"
+                                        role="button"
+                                        data-bs-slide="prev"
+                                    >
+                                        <span className="carousel-control-prev-icon" aria-hidden="true" />
+                                    </a>
+                                    <a
+                                        className="carousel-control-next bg-transparent w-aut"
+                                        href="#recipeCarousel"
+                                        role="button"
+                                        data-bs-slide="next"
+                                    >
+                                        <span className="carousel-control-next-icon" aria-hidden="true" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </>
 
     )
