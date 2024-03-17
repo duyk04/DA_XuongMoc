@@ -431,11 +431,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/CB997E/333333?text=1"
+                                                            src="../images/AnhCatTC/doi-tac/marvella.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 1</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -444,11 +443,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2"
+                                                            src="../images/AnhCatTC/doi-tac/melissa.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 2</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -457,11 +455,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3"
+                                                            src="../images/AnhCatTC/doi-tac/muong-thanh.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 3</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -470,11 +467,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/B7B7A4/333333?text=4"
+                                                            src="../images/AnhCatTC/doi-tac/sheraton.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 4</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -483,11 +479,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 5</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -496,11 +491,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            src="../images/AnhCatTC/doi-tac/the-coffee-house.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 5</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,11 +503,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
+                                                            src="../images/AnhCatTC/doi-tac/vinpearl.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 5</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -522,11 +515,10 @@ function Home() {
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img
-                                                            src="https://via.placeholder.com/700x500.png/6B705C/eeeeee?text=6"
+                                                            src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
                                                             className="img-fluid"
                                                         />
                                                     </div>
-                                                    <div className="card-img-overlay">Slide 6</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -549,6 +541,7 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
+                            
                         </div>
 
                     </div>
