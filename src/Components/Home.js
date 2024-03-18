@@ -541,12 +541,48 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
+                </div>
+            </div>
+
+
+            {/* Liên hệ */}
+            <div className='Lien-he position-relative w-100 d-flex justify-content-center'>
+                <div>
+                    <div className='bg-lienhe vw-100'>
+                        <img src='../images/AnhCatTC/lienhe-bg.jpg' className='w-100' />
+                    </div>
+                    <div className='anh-lienhe position-absolute'>
+                        <img src='../images/AnhCatTC/lienhe-1.png' />
+                    </div>
+                    <div className='position-absolute w-100 d-flex justify-content-center top-0'>
+                        <div className='box-container'>
+                            <div className='row'>
+                                <div className='col-md-6'>
+                                    <div className='row'>
+                                        <p>Trải nghiệm dịch vụ</p>
+                                        <p>cùng Hoàng Hoan ngay</p>
+                                    </div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div className='row'>
+                                        <form action='#' method='post'>
+                                            <div className='text-start'>
+                                                <label for="exampleInputEmail1" class="form-label">Thông tin liên hệ</label>
+                                                <input type="text" class="form-control" placeholder='Email/Số điện thoại'/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
 
         </>
