@@ -20,6 +20,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
+    list-style: none;
     text-decoration: none !important;
     transition: all 0.2s linear;
     /* font-size: 20px; */

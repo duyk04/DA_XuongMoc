@@ -343,20 +343,22 @@ p {
     left: 3rem;
 }
 
-.Lien-he .title-contact{
+.Lien-he .title-contact {
     margin-top: 20px;
     margin-left: 200px;
 }
 
-.Lien-he p:first-child{
+.Lien-he p:first-child {
     font-family: Gotham-Medium;
     font-size: 1.2rem;
-} 
-.Lien-he p:last-child{
+}
+
+.Lien-he p:last-child {
     position: relative;
     font-size: 1.2rem;
 }
-.Lien-he p:last-child::after{
+
+.Lien-he p:last-child::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -365,10 +367,12 @@ p {
     width: 28%;
     height: 8px;
 }
-.Lien-he label{
+
+.Lien-he label {
     font-family: Gotham-Thin;
-    
+
 }
+
 .Lien-he .form-contact input {
     padding-left: 15px;
     width: 420px;
@@ -378,4 +382,33 @@ p {
 .Lien-he .form-contact button {
     width: 120px;
     height: 50px;
+}
+
+/* footer */
+footer {
+    background-color: #363636;
+    height: 300px;
+}
+
+footer p {
+    color: #fff;
+    text-align: left;
+    font-family: Gotham-Thin;
+    margin-bottom: 0;
+}
+
+footer li:first-child p {
+    font-family: Gotham-Medium;
+    font-size: 1.2rem;
+
+}
+
+/* footer ul:first-child li:nth-child(2) p {
+    font-family: Gotham-Medium;
+    font-size: 1.3rem;
+} */
+footer .box-container ul:first-child li:nth-child(2) > p {
+    /* CSS properties */
+    font-family: Gotham-Medium;
+    font-size: 1.3rem;
 }

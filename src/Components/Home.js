@@ -429,7 +429,7 @@ function Home() {
                                     <div className="carousel-inner" role="listbox">
                                         <div className="carousel-item active">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/marvella.png"
@@ -441,7 +441,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/melissa.png"
@@ -453,7 +453,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/muong-thanh.png"
@@ -465,7 +465,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/sheraton.png"
@@ -477,7 +477,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
@@ -489,7 +489,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/the-coffee-house.png"
@@ -501,7 +501,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/vinpearl.png"
@@ -513,7 +513,7 @@ function Home() {
                                         </div>
                                         <div className="carousel-item">
                                             <div className="col-md-2">
-                                                <div className="card">
+                                                <div className="card border-0">
                                                     <div className="card-img">
                                                         <img
                                                             src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
@@ -575,7 +575,7 @@ function Home() {
                                                 <label for="email" class="text-white pb-2">Thông tin liên hệ</label>
                                                 <div className='row'>
                                                     <div class="col-md-8">
-                                                        <input type="text" name='email' id='email'  placeholder='Email/Số điện thoại' />
+                                                        <input type="text" name='email' id='email' placeholder='Email/Số điện thoại' />
                                                     </div>
                                                     <div className='col-md-4'>
                                                         <button type='button'>Gửi</button>
@@ -593,8 +593,83 @@ function Home() {
 
             </div>
 
+            {/* footer */}
+            <footer className='position-relative w-100 d-flex justify-content-center'>
+                <div className='box-container '>
+                    <div className='row'>
+                        <div className='col-4'>
+                            <ul>
+                                <li>
+                                    <p>THÔNG TIN CHUNG</p>
+                                </li>
+                                <li>
+                                    <p>CÔNG TY TNHH HOÀNG HOAN</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i className="fa-solid fa-phone pe-2" style={{ color: "#ffffff",width:26 }} />
+                                        0853.885.203
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i className="fa-regular fa-envelope pe-2" style={{ color: "#ffffff",width:26 }} />
+                                        cskh@gmail.com
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i className="fa-solid fa-location-dot pe-2" style={{ color: "#ffffff",width:26 }} />
+                                        Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='col-4'>
+                            <ul>
+                                <li>
+                                    <p>VỀ CHÚNG TÔI</p>
+                                </li>
+                                <li>
+                                    <p>Giới thiệu</p>
+                                </li>
+                                <li>
+                                    <p>Sản phẩm</p>
+                                </li>
+                                <li>
+                                    <p>Tin tức</p>
+                                </li>
+                                <li>
+                                    <p>Đối tác</p>
+                                </li>
+                                <li>
+                                    <p>Liên hệ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='col-4'>
+                            <ul>
+                                <li>
+                                    <p>KẾT NỐI VỚI CHÚNG TÔI</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i className="fa-brands fa-square-facebook fa-2xl" style={{ color: "#ffffff" }} />
+                                        <i className="fa-brands fa-square-youtube fa-2xl mx-2" style={{ color: "#ffffff" }} />
+                                        <i className="fa-solid fa-square-envelope fa-2xl" style={{ color: "#ffffff" }} />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <img src='../images/AnhCatTC/ftThongBao.png' />
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </>
-
     )
 }
 
