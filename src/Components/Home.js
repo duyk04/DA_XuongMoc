@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../style.css'
 import '../js/main.js'
 
+
 function Home() {
 
     return (
@@ -556,23 +557,30 @@ function Home() {
                         <img src='../images/AnhCatTC/lienhe-bg.jpg' className='w-100' />
                     </div>
                     <div className='anh-lienhe position-absolute'>
-                        <img src='../images/AnhCatTC/lienhe-1.png' />
+                        <img src='../images/AnhCatTC/lienhe-1.png' alt='img' />
                     </div>
-                    <div className='position-absolute w-100 d-flex justify-content-center top-0'>
+                    <div className='position-absolute w-100 d-flex justify-content-center top-50 start-50 translate-middle'>
                         <div className='box-container'>
                             <div className='row'>
                                 <div className='col-md-6'>
-                                    <div className='row'>
-                                        <p>Trải nghiệm dịch vụ</p>
-                                        <p>cùng Hoàng Hoan ngay</p>
+                                    <div className='row title-contact'>
+                                        <p className='text-white text-start mb-0'>Trải nghiệm dịch vụ</p>
+                                        <p className='text-white text-start'>cùng Hoàng Hoan ngay</p>
                                     </div>
                                 </div>
-                                <div className='col-md-6'>
+                                <div className='col-md-6 form-contact'>
                                     <div className='row'>
                                         <form action='#' method='post'>
                                             <div className='text-start'>
-                                                <label for="exampleInputEmail1" class="form-label">Thông tin liên hệ</label>
-                                                <input type="text" class="form-control" placeholder='Email/Số điện thoại'/>
+                                                <label for="email" class="text-white pb-2">Thông tin liên hệ</label>
+                                                <div className='row'>
+                                                    <div class="col-md-8">
+                                                        <input type="text" name='email' id='email'  placeholder='Email/Số điện thoại' />
+                                                    </div>
+                                                    <div className='col-md-4'>
+                                                        <button type='button'>Gửi</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>

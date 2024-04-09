@@ -3,7 +3,7 @@
 }
 
 .box-container {
-    width: 80%;
+    width: 70%;
 }
 
 .title-banner {
@@ -122,8 +122,6 @@ p {
 }
 
 /* About */
-.About {}
-
 .About h4 {
     text-transform: uppercase;
     font-family: Gotham-Ultra;
@@ -340,7 +338,44 @@ p {
     margin-top: 8rem;
 }
 
-.Lien-he .anh-lienhe{
+.Lien-he .anh-lienhe {
     top: -10rem;
     left: 3rem;
+}
+
+.Lien-he .title-contact{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.Lien-he p:first-child{
+    font-family: Gotham-Medium;
+    font-size: 1.2rem;
+} 
+.Lien-he p:last-child{
+    position: relative;
+    font-size: 1.2rem;
+}
+.Lien-he p:last-child::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 12px;
+    background-color: #fff;
+    width: 28%;
+    height: 8px;
+}
+.Lien-he label{
+    font-family: Gotham-Thin;
+    
+}
+.Lien-he .form-contact input {
+    padding-left: 15px;
+    width: 420px;
+    height: 50px;
+}
+
+.Lien-he .form-contact button {
+    width: 120px;
+    height: 50px;
 }
