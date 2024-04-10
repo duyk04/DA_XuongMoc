@@ -395,19 +395,31 @@ footer p {
     text-align: left;
     font-family: Gotham-Thin;
     margin-bottom: 0;
+ 
+}
+
+footer p:hover{
+    color: #adadad;
+    cursor: pointer;
 }
 
 footer li:first-child p {
     font-family: Gotham-Medium;
     font-size: 1.2rem;
-
+    position: relative;
 }
 
-/* footer ul:first-child li:nth-child(2) p {
-    font-family: Gotham-Medium;
-    font-size: 1.3rem;
-} */
-footer .box-container ul:first-child li:nth-child(2) > p {
+footer li:first-child p::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30%;
+    height: 6px;
+    background-color: #fff;
+}
+
+footer .name1 {
     /* CSS properties */
     font-family: Gotham-Medium;
     font-size: 1.3rem;
