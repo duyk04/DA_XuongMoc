@@ -10,7 +10,6 @@ function Home() {
 
     return (
         <>
-            
             <div className='Banner position-relative'>
                 <div className='img-banner'>
                     <img className='w-100' src='../../images/AnhCatTC/banner.png' /> 
