@@ -1,5 +1,33 @@
+/* NavBar */
 .navbar {
     padding: 1rem 10%;
+}
+
+.navbar .navbar-item li {
+    position: relative;
+    font-family: Gotham-Medium, sans-serif;
+}
+
+.navbar .navbar-item li a {
+    color: #363636;
+}
+
+.navbar .navbar-item .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    right: 0;
+    height: 5px;
+    background: #bd945f;
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.navbar .navbar-item .nav-item:hover::after {
+    width: 100%;
+    left: 0%;
+    /* background-color: green ; */
 }
 
 .box-container {
@@ -395,10 +423,10 @@ footer p {
     text-align: left;
     font-family: Gotham-Thin;
     margin-bottom: 0;
- 
+
 }
 
-footer p:hover{
+footer p:hover {
     color: #adadad;
     cursor: pointer;
 }
@@ -409,7 +437,7 @@ footer li:first-child p {
     position: relative;
 }
 
-footer li:first-child p::after{
+footer li:first-child p::after {
     content: "";
     position: absolute;
     bottom: -6px;
