@@ -5,6 +5,30 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
+    // const CustomPrevArrow = (props) => {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //         <div
+    //             className={className}
+    //             style={{ ...style, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', left: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
+    //             onClick={onClick}
+    //         >
+    //             Previous
+    //         </div>
+    //     );
+    // }
+    // const CustomNextArrow = (props) => {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //         <div
+    //             className={className}
+    //             style={{ ...style, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', right: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
+    //             onClick={onClick}
+    //         >
+    //             Next
+    //         </div>
+    //     );
+    // }
     const settings = {
         dots: false,
         infinite: true,
@@ -12,13 +36,16 @@ function Home() {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true, // Tự động cuộn
-        autoplaySpeed: 5000 // Thời gian chờ giữa các lần cuộn (milliseconds)
+        autoplaySpeed: 5000, // Thời gian chờ giữa các lần cuộn (milliseconds)
+        // prevArrow: <CustomPrevArrow />,
+        // nextArrow: <CustomNextArrow /> 
     };
+    
     return (
         <>
             <div className='Banner position-relative'>
                 <div className='img-banner'>
-                    <img className='w-100' src='../../images/AnhCatTC/banner.png' />
+                    <img className='w-100' src='../../images/AnhCatTC/banner.png' alt='banner'/>
                 </div>
                 <div className='title-banner position-absolute text-start'>
                     <div>
@@ -90,7 +117,7 @@ function Home() {
                     <div className='list-product d-flex align-items-center position-relative'>
                         <div className='position-absolute' style={{ left: '-25px' }}>
                             <button>
-                                <img src='..\images\AnhCatTC\button-left.png' />
+                                <img src='..\images\AnhCatTC\button-left.png' alt='...' />
                             </button>
                         </div>
                         <div className='col-md-3'>
@@ -219,7 +246,7 @@ function Home() {
                         </div>
                         <div className='position-absolute' style={{ right: '-25px' }}>
                             <button>
-                                <img src='..\images\AnhCatTC\button-right.png' />
+                                <img src='..\images\AnhCatTC\button-right.png' alt='...' />
                             </button>
                         </div>
                     </div>
@@ -231,14 +258,14 @@ function Home() {
             <div className='About w-100 position-relative'>
                 <div>
                     <div className='w-100'>
-                        <img src='../images/AnhCatTC/ve-chung-toi/bg-about-us.jpg' className='w-100 img' />
+                        <img src='../images/AnhCatTC/ve-chung-toi/bg-about-us.jpg' alt='bg-about-us' className='w-100 img' />
                     </div>
                     <div className='box-container position-absolute top-0 start-50 translate-middle-x'>
                         <h4 className='mt-5'>Về chúng tôi</h4>
                         <div>
                             <div className='row mt-5'>
                                 <div className='col-md-6'>
-                                    <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi.jpg' className='w-100 h-100' />
+                                    <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi.jpg' alt='ve-chung-toi' className='w-100 h-100' />
                                 </div>
                                 <div className='col-md-6'>
                                     <div className='row'>
@@ -260,22 +287,22 @@ function Home() {
                                     <div className='row'>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg' className='w-100 h-100' />
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg' alt='...' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg' className='w-100 h-100' />
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg' alt='...' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg' className='w-100 h-100' />
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg' alt='...' className='w-100 h-100' />
                                             </div>
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' className='w-100 h-100' alt='img' />
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' alt='...' className='w-100 h-100'/>
                                             </div>
                                         </div>
                                     </div>
@@ -369,15 +396,15 @@ function Home() {
                                 </div>
                             </div>
                             <div className='row'>
-                                <a href='#'>
-                                    <p className='text-uppercase text-more mt-5'>Xem thêm <i class="fa-solid fa-arrow-right fa-xl"></i></p>
+                                <a href="#">
+                                    <p className='text-uppercase text-more mt-5'>Xem thêm <i className="fa-solid fa-arrow-right fa-xl"></i></p>
                                 </a>
                             </div>
                         </div>
                         <div className='col-md-5 New-second' >
                             <div className='row mb-4' style={{ height: 200 }} >
                                 <div className='col-md-5 img-2'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_1.png' className='w-100' />
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_1.png' alt='tintuc_1' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
                                     <h3 >Trang trí phòng khách cho thêm năng động</h3>
@@ -386,7 +413,7 @@ function Home() {
                             </div>
                             <div className='row mb-4' style={{ height: 200 }}>
                                 <div className='col-md-5 img-2'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_2.png' className='w-100' />
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_2.png' alt='tintuc_2' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
                                     <h3 >25+ mẫu giường ngủ hộc kéo cho phòng nhỏ</h3>
@@ -395,7 +422,7 @@ function Home() {
                             </div>
                             <div className='row mb-4' style={{ height: 200 }}>
                                 <div className='col-md-5 img-2'>
-                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_3.png' className='w-100' />
+                                    <img src='../images/AnhCatTC/tin-tuc/tintuc_3.png' alt='tintuc_3' className='w-100' />
                                 </div>
                                 <div className='col-md-7'>
                                     <h3 >Top 10 mẫu nội thất chung cư 1 phòng ngủ</h3>
@@ -422,6 +449,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/marvella.png"
                                                     className="img-fluid"
+                                                    alt='marvella'
                                                 />
                                             </div>
                                         </div>
@@ -432,6 +460,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/melissa.png"
                                                     className="img-fluid"
+                                                    alt='melissa'
                                                 />
                                             </div>
                                         </div>
@@ -442,6 +471,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/muong-thanh.png"
                                                     className="img-fluid"
+                                                    alt='muong-thanh'
                                                 />
                                             </div>
                                         </div>
@@ -452,6 +482,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/sheraton.png"
                                                     className="img-fluid"
+                                                    alt='sheraton'
                                                 />
                                             </div>
                                         </div>
@@ -462,6 +493,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
                                                     className="img-fluid"
+                                                    alt='sunrise-sapa'
                                                 />
                                             </div>
                                         </div>
@@ -472,6 +504,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/the-coffee-house.png"
                                                     className="img-fluid"
+                                                    alt='the-coffee-house'
                                                 />
                                             </div>
                                         </div>
@@ -482,6 +515,7 @@ function Home() {
                                                 <img
                                                     src="../images/AnhCatTC/doi-tac/vinpearl.png"
                                                     className="img-fluid"
+                                                    alt='vinpearl'
                                                 />
                                             </div>
                                         </div>
@@ -501,7 +535,7 @@ function Home() {
             <div className='Lien-he position-relative w-100 d-flex justify-content-center'>
                 <div>
                     <div className='bg-lienhe w-100'>
-                        <img src='../images/AnhCatTC/lienhe-bg.jpg' className='w-100' />
+                        <img src='../images/AnhCatTC/lienhe-bg.jpg' alt='lienhe-bg' className='w-100' />
                     </div>
                     <div className='anh-lienhe position-absolute'>
                         <img src='../images/AnhCatTC/lienhe-1.png' alt='img' />
@@ -519,9 +553,9 @@ function Home() {
                                     <div className='row'>
                                         <form action='#' method='post'>
                                             <div className='text-start'>
-                                                <label for="email" class="text-white pb-2">Thông tin liên hệ</label>
+                                                <label htmlFor="email" className="text-white pb-2">Thông tin liên hệ</label>
                                                 <div className='row'>
-                                                    <div class="col-md-8">
+                                                    <div className="col-md-8">
                                                         <input type="text" name='email' id='email' placeholder='Email/Số điện thoại' />
                                                     </div>
                                                     <div className='col-md-4'>
