@@ -1,0 +1,86 @@
+/* Introduce */
+.Introduce .banner p {
+    font-family: Gotham-Ultra;
+    font-size: 3rem;
+}
+
+.Introduce .box-container {
+    background-color: #fff;
+    height: max-content;
+    position: relative;
+    top: -3rem;
+    margin-bottom: 5rem;
+}
+
+.Introduce h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.Introduce h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.Introduce .Thanh-lap .row {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Introduce .Thanh-lap img {
+    height: 100%;
+}
+
+.Introduce .Thanh-lap p {
+    font-family: Gotham-Medium;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.Introduce .Tam-nhin .row {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Introduce .Tam-nhin p {
+    font-family: Gotham-Medium;
+    text-align: center;
+    margin-top: 1.3rem;
+}
+
+.Introduce .Su-menh{
+    margin-bottom: 4rem;
+}
+.Introduce .Su-menh .item {
+    border: solid 4px #bd945f;
+}
+
+.Introduce .Su-menh .row {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Introduce .Su-menh h5 {
+    font-family: Gotham-Medium;
+    color: #bd945f;
+    font-size: 1.5rem;
+}
+
+.Introduce .Su-menh p{
+    text-align: start;
+    font-family: Gotham-Medium;
+    font-size: 0.8rem;
+    width: 380px;
+}
