@@ -1,0 +1,455 @@
+/* NavBar */
+.navbar {
+    padding: 1rem 10%;
+}
+
+.navbar .navbar-item li {
+    position: relative;
+    font-family: Gotham-Medium, sans-serif;
+}
+
+.navbar .navbar-item li a {
+    color: #363636;
+}
+
+.navbar .navbar-item .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    right: 0;
+    height: 5px;
+    background: #bd945f;
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.navbar .navbar-item .nav-item:hover::after {
+    width: 100%;
+    left: 0%;
+    /* background-color: green ; */
+}
+
+.box-container {
+    width: 70%;
+}
+
+.title-banner {
+    top: 10%;
+}
+
+.title-banner h1 {
+    font-family: Gotham-Ultra, sans-serif;
+}
+
+.title-banner span {
+    font-family: Gotham-Ultra, sans-serif;
+    color: #bd945f;
+    font-size: 2.5rem;
+}
+
+.title-banner p {
+    max-width: 30rem;
+    margin-bottom: 0.75rem;
+}
+
+.title-banner button {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #bd945f;
+    border: 0.2rem solid #bd945f;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.title-banner {
+    padding: 0 10%;
+}
+
+.title-banner button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+
+.title-banner button:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.title-banner button:hover {
+    color: #bd945f;
+}
+
+.Categories {
+    background-color: #f3f3f3;
+}
+
+.list-categories {
+    background-color: #fff;
+    position: relative;
+    top: -3rem;
+    padding: 0rem 3rem;
+}
+
+.list-categories a {
+    color: #2c2e53;
+    background-color: transparent;
+}
+
+p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: Gotham-Ultra;
+    color: #2c2e53;
+}
+
+.Categories h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.Categories h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.describe {
+    font-family: Gotham-Medium;
+    color: #686868 !important;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.img-hover:hover {
+    scale: 1.2;
+    transition: 0.4s linear
+}
+
+/* About */
+.About h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.About h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 10rem;
+    border-top: 0.6rem solid #bd945f;
+}
+
+.About::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.About p {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #fff;
+    font-family: Gotham-Medium;
+}
+
+.About p:first-child {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #fff;
+    font-family: Gotham-Medium;
+}
+
+.About span {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Gotham-Ultra;
+}
+
+/* Tại sao chọn hoàng hoan */
+
+.About .item {
+    background-color: #fff;
+}
+
+.About .item h5 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #bd945f;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.About .item p {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #686868;
+    font-family: Gotham-Medium;
+}
+
+.About .item img {
+    padding: 0 0 0 32px;
+}
+
+/* New */
+
+
+.New h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #1c1c1e;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.New h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    max-width: 10rem;
+    border-top: 0.6rem solid #bd945f;
+}
+
+.New .box-content {
+    background-color: #bd945f;
+    opacity: 0.9;
+}
+
+.New .box-container .img {
+    height: 33rem !important;
+}
+
+.New .box-content p:first-child {
+    font-family: Gotham-Medium;
+    font-size: 1.3rem;
+}
+
+.New .box-content p:last-child {
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.New .box-container img {
+    object-fit: cover;
+}
+
+.New .text-more {
+    font-family: Gotham-Medium;
+    font-size: 1.5rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.New-second h3 {
+    font-family: Gotham-Medium;
+    font-size: 1.5rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.New-second p {
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Đối tác */
+
+.Doi-tac h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: #1c1c1e;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.Doi-tac h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    max-width: 10rem;
+    border-top: 0.6rem solid #bd945f;
+}
+
+
+/* Carousel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(16.66%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-16.66%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+
+/* Liên hệ */
+
+.Lien-he {
+    margin-top: 8rem;
+}
+
+.Lien-he .anh-lienhe {
+    top: -10rem;
+    left: 3rem;
+}
+
+.Lien-he .title-contact {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.Lien-he p:first-child {
+    font-family: Gotham-Medium;
+    font-size: 1.2rem;
+}
+
+.Lien-he p:last-child {
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.Lien-he p:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 12px;
+    background-color: #fff;
+    width: 28%;
+    height: 8px;
+}
+
+.Lien-he label {
+    font-family: Gotham-Thin;
+
+}
+
+.Lien-he .form-contact input {
+    padding-left: 15px;
+    width: 420px;
+    height: 50px;
+}
+
+.Lien-he .form-contact button {
+    width: 120px;
+    height: 50px;
+}
+
+/* footer */
+footer {
+    background-color: #363636;
+    height: 300px;
+}
+
+footer p {
+    color: #fff;
+    text-align: left;
+    font-family: Gotham-Thin;
+    margin-bottom: 0;
+
+}
+
+footer p:hover {
+    color: #adadad;
+    cursor: pointer;
+}
+
+footer li:first-child p {
+    font-family: Gotham-Medium;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+footer li:first-child p::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30%;
+    height: 6px;
+    background-color: #fff;
+}
+
+footer .name1 {
+    /* CSS properties */
+    font-family: Gotham-Medium;
+    font-size: 1.3rem;
+}
+
