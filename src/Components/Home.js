@@ -1,18 +1,24 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Slider from "react-slick";
 import '../Css/style.css'
-import '../js/main.js'
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
-
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true, // Tự động cuộn
+        autoplaySpeed: 5000 // Thời gian chờ giữa các lần cuộn (milliseconds)
+    };
     return (
         <>
             <div className='Banner position-relative'>
                 <div className='img-banner'>
-                    <img className='w-100' src='../../images/AnhCatTC/banner.png' /> 
+                    <img className='w-100' src='../../images/AnhCatTC/banner.png' />
                 </div>
                 <div className='title-banner position-absolute text-start'>
                     <div>
@@ -23,6 +29,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+
             <div className='Categories w-100 d-flex justify-content-center'>
                 <div className='box-container'>
                     <div className='list-categories w-100'>
@@ -81,7 +88,7 @@ function Home() {
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
                     <div className='list-product d-flex align-items-center position-relative'>
-                        <div className='position-absolute' style={{left:'-25px'}}>
+                        <div className='position-absolute' style={{ left: '-25px' }}>
                             <button>
                                 <img src='..\images\AnhCatTC\button-left.png' />
                             </button>
@@ -210,7 +217,7 @@ function Home() {
                             </p>
                             <p className='mt-0'>2.499.999 VND</p>
                         </div>
-                        <div className='position-absolute' style={{right:'-25px'}}>
+                        <div className='position-absolute' style={{ right: '-25px' }}>
                             <button>
                                 <img src='..\images\AnhCatTC\button-right.png' />
                             </button>
@@ -274,7 +281,7 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <h4 className='mt-3'>Tại sao nên chọn hoàng hoan?</h4>
+                            <h4 className='mt-3'>Tại sao nên chọn hoàng hoan ?</h4>
                             <div>
                                 <div className='row mt-2 mb-4'>
                                     <div className='col-md-6'>
@@ -402,129 +409,85 @@ function Home() {
             </div>
 
             {/* Đối tác */}
-
             <div className='Doi-tac position-relative w-100 d-flex justify-content-center'>
                 <div className='box-container'>
                     <h4 className='mt-5'>Đối tác</h4>
                     <div>
                         <div className="container text-center my-3">
                             <div className="row mx-auto my-auto justify-content-center">
-                                <div id="recipeCarousel" className="carousel slide" data-bs-ride="carousel">
-                                    <div className="carousel-inner" role="listbox">
-                                        <div className="carousel-item active">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/marvella.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/melissa.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/muong-thanh.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/sheraton.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/the-coffee-house.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/vinpearl.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <div className="col-md-2">
-                                                <div className="card border-0">
-                                                    <div className="card-img">
-                                                        <img
-                                                            src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
-                                                            className="img-fluid"
-                                                        />
-                                                    </div>
-                                                </div>
+                                <Slider {...settings}>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/marvella.png"
+                                                    className="img-fluid"
+                                                />
                                             </div>
                                         </div>
                                     </div>
-                                    <a
-                                        className="carousel-control-prev bg-transparent w-aut"
-                                        href="#recipeCarousel"
-                                        role="button"
-                                        data-bs-slide="prev"
-                                    >
-                                        <span className="carousel-control-prev-icon" aria-hidden="true" />
-                                    </a>
-                                    <a
-                                        className="carousel-control-next bg-transparent w-aut"
-                                        href="#recipeCarousel"
-                                        role="button"
-                                        data-bs-slide="next"
-                                    >
-                                        <span className="carousel-control-next-icon" aria-hidden="true" />
-                                    </a>
-                                </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/melissa.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/muong-thanh.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/sheraton.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/sunrise-sapa.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/the-coffee-house.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="card border-0">
+                                            <div className="card-img">
+                                                <img
+                                                    src="../images/AnhCatTC/doi-tac/vinpearl.png"
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Slider>
+                               
                             </div>
 
                         </div>
@@ -572,12 +535,11 @@ function Home() {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
-            
+
         </>
     )
 }
