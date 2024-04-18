@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../style.css'
+import '../Css/style.css'
 import '../js/main.js'
 
 
@@ -80,8 +80,8 @@ function Home() {
                     <div className='slide-product mt-5'>
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
-                    <div className='list-product d-flex align-items-center'>
-                        <div>
+                    <div className='list-product d-flex align-items-center position-relative'>
+                        <div className='position-absolute' style={{left:'-25px'}}>
                             <button>
                                 <img src='..\images\AnhCatTC\button-left.png' />
                             </button>
@@ -210,7 +210,7 @@ function Home() {
                             </p>
                             <p className='mt-0'>2.499.999 VND</p>
                         </div>
-                        <div>
+                        <div className='position-absolute' style={{right:'-25px'}}>
                             <button>
                                 <img src='..\images\AnhCatTC\button-right.png' />
                             </button>
@@ -537,7 +537,7 @@ function Home() {
             {/* Liên hệ */}
             <div className='Lien-he position-relative w-100 d-flex justify-content-center'>
                 <div>
-                    <div className='bg-lienhe vw-100'>
+                    <div className='bg-lienhe w-100'>
                         <img src='../images/AnhCatTC/lienhe-bg.jpg' className='w-100' />
                     </div>
                     <div className='anh-lienhe position-absolute'>
