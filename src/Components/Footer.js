@@ -70,7 +70,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <p>
-                                        <img src='../images/AnhCatTC/ftThongBao.png' />
+                                        <img src='../images/AnhCatTC/ftThongBao.png' alt='ftThongBao' />
                                     </p>
                                 </li>
                             </ul>
