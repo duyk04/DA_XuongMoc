@@ -1,0 +1,58 @@
+.New {
+    background-color: #f3f3f3;
+}
+
+.New .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+.New h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    font-size: 2rem;
+    display: inline;
+}
+
+.New h4:after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 100%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.New h5{
+    color: #bd945f;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: Gotham-Ultra;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.New p{
+    font-family: Gotham-Medium;
+    text-align: justify;
+    line-height: initial;
+    font-weight: 600;
+}
+.New .btn-page div{
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.New .btn-page div:hover{
+    background-color: #bd945f;
+    color: black;
+    cursor: pointer;
+}
