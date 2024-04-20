@@ -12,9 +12,11 @@
     font-family: Gotham-Medium, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 15px 0px;
+    z-index: 1;
 }
 
-.navbar .navbar-item .nav-item::after {
+.navbar .navbar-item .nav-item a::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -23,10 +25,10 @@
     height: 5px;
     background: #bd945f;
     transition: 0.3s linear;
-    z-index: 1;
+    z-index: 0;
 }
 
-.navbar .navbar-item .nav-item:hover::after {
+.navbar .navbar-item .nav-item a:hover::after {
     width: 100%;
     left: 0%;
     /* background-color: green ; */
