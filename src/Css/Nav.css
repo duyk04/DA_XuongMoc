@@ -1,0 +1,33 @@
+/* NavBar */
+.navbar {
+    padding: 1rem 10%;
+}
+
+.navbar .navbar-item li {
+    position: relative;
+}
+
+.navbar .navbar-item li a {
+    color: #363636;
+    font-family: Gotham-Medium, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-item .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    right: 0;
+    height: 5px;
+    background: #bd945f;
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.navbar .navbar-item .nav-item:hover::after {
+    width: 100%;
+    left: 0%;
+    /* background-color: green ; */
+}
