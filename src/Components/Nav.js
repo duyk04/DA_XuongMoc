@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../Css/style.css'
+import '../Css/Nav.css'
 function Nav() {
     return (
         <div>
@@ -23,6 +23,9 @@ function Nav() {
                                 </li>
                                 <li className="nav-item mx-4">
                                     <Link to={"/new"}>Tin tức</Link>
+                                </li>
+                                <li className="nav-item mx-4">
+                                    <Link to={"/partner"}>Đối tác</Link>
                                 </li>
                                 <li className="nav-item mx-4">
                                     <Link to={"/contact"}>Liên hệ</Link>
