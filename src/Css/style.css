@@ -19,7 +19,9 @@
 
 .title-banner p {
     max-width: 30rem;
+    text-align: justify;
     margin-bottom: 0.75rem;
+    font-family: Gotham-Medium;
 }
 
 .title-banner button {
@@ -153,7 +155,7 @@ p {
 
 .About p {
     font-size: 0.9rem;
-    text-align: left;
+    text-align: justify;
     color: #fff;
     font-family: Gotham-Medium;
 }
@@ -203,7 +205,7 @@ p {
 /* New */
 
 
-.New h4 {
+.New-home h4 {
     text-transform: uppercase;
     font-family: Gotham-Ultra;
     color: #1c1c1e;
@@ -213,7 +215,7 @@ p {
     font-size: 2rem;
 }
 
-.New h4:after {
+.New-home h4:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -224,31 +226,31 @@ p {
     border-top: 0.6rem solid #bd945f;
 }
 
-.New .box-content {
+.New-home .box-content {
     background-color: #bd945f;
     opacity: 0.9;
 }
 
-.New .box-container .img {
+.New-home .box-container .img {
     height: 33rem !important;
 }
 
-.New .box-content p:first-child {
+.New-home .box-content p:first-child {
     font-family: Gotham-Medium;
     font-size: 1.3rem;
 }
 
-.New .box-content p:last-child {
+.New-home .box-content p:last-child {
     font-family: Gotham-Medium;
     font-size: 1rem;
     text-align: justify;
 }
 
-.New .box-container img {
+.New-home .box-container img {
     object-fit: cover;
 }
 
-.New .text-more {
+.New-home .text-more {
     font-family: Gotham-Medium;
     font-size: 1.5rem;
     color: #bd945f;
