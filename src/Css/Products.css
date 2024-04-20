@@ -1,0 +1,50 @@
+
+.Products .Banner .box-title{
+    top: 30%;
+    right: 20%;
+}
+
+.Products .box-title button{
+    width: 185px;
+    height: 50px;
+    background-color: white;
+    float: right;
+}
+.Products .box-title button:hover{
+    background-color: antiquewhite;
+}
+
+.Products .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+
+.Products .Content{
+    background-color: #f3f3f3;
+}
+
+.Products h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.Products h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 80%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.Products .btnViewAll{
+    font-size: 1.2rem;
+    font-family: Gotham-Medium;
+    background-color: #fff;
+}
