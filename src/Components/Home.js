@@ -13,7 +13,7 @@ function Home() {
                     <div>
                         <h1>THẾ GIỚi NỘI THẤT SỐ 1 VIỆT NAM</h1>
                         <span>HOÀNG HOAN</span>
-                        <p className='text-start'>Sứ mệnh của chúng tôi là kết hợp hài hòa giữa ý tưởng và mong muốn của khách hàng, đem lại những phút giây thư giãn tuyệt vời bên gia đình và những người thân yêu.</p>
+                        <p>Sứ mệnh của chúng tôi là kết hợp hài hòa giữa ý tưởng và mong muốn của khách hàng, đem lại những phút giây thư giãn tuyệt vời bên gia đình và những người thân yêu.</p>
                         <button>LIÊN HỆ NGAY</button>
                     </div>
                 </div>
@@ -73,10 +73,10 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className='slide-product mt-5'>
+                    <div className='slide-product mt-5 mb-3'>
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
-                    <div className='list-product d-flex align-items-center position-relative'>
+                    <div className='list-product d-flex align-items-center position-relative mb-4'>
                         <div className='position-absolute' style={{ left: '-25px' }}>
                             <button>
                                 <img src='..\images\AnhCatTC\button-left.png' alt='...' />
@@ -339,7 +339,7 @@ function Home() {
 
             </div>
             {/* New */}
-            <div className='New position-relative w-100 d-flex justify-content-center'>
+            <div className='New-home position-relative w-100 d-flex justify-content-center'>
                 <div className='box-container '>
                     <h4 className='mt-5'>Tin tức</h4>
                     <div className='row mt-5'>
