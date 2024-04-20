@@ -880,7 +880,6 @@ function Products() {
 						</div>
 					</div>
 
-
 					{/* Cầu thang */}
 					<div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
