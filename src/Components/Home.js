@@ -1,51 +1,13 @@
 import React from 'react'
-import Slider from "react-slick";
 import '../Css/style.css'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import SliderCustom from './SliderCustom';
 
 function Home() {
-    // const CustomPrevArrow = (props) => {
-    //     const { className, style, onClick } = props;
-    //     return (
-    //         <div
-    //             className={className}
-    //             style={{ ...style, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', left: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
-    //             onClick={onClick}
-    //         >
-    //             Previous
-    //         </div>
-    //     );
-    // }
-    // const CustomNextArrow = (props) => {
-    //     const { className, style, onClick } = props;
-    //     return (
-    //         <div
-    //             className={className}
-    //             style={{ ...style, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', right: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
-    //             onClick={onClick}
-    //         >
-    //             Next
-    //         </div>
-    //     );
-    // }
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 700,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true, // Tự động cuộn
-        autoplaySpeed: 5000, // Thời gian chờ giữa các lần cuộn (milliseconds)
-        // prevArrow: <CustomPrevArrow />,
-        // nextArrow: <CustomNextArrow /> 
-    };
-    
     return (
         <>
             <div className='Banner position-relative'>
                 <div className='img-banner'>
-                    <img className='w-100' src='../../images/AnhCatTC/banner.png' alt='banner'/>
+                    <img className='w-100' src='../../images/AnhCatTC/banner.png' alt='banner' />
                 </div>
                 <div className='title-banner position-absolute text-start'>
                     <div>
@@ -302,7 +264,7 @@ function Home() {
                                         </div>
                                         <div className='col-md-3'>
                                             <div>
-                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' alt='...' className='w-100 h-100'/>
+                                                <img src='../images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg' alt='...' className='w-100 h-100' />
                                             </div>
                                         </div>
                                     </div>
@@ -442,7 +404,7 @@ function Home() {
                     <div>
                         <div className="container text-center my-3">
                             <div className="row mx-auto my-auto justify-content-center">
-                                <Slider {...settings}>
+                                <SliderCustom infinite={true} autoplay={true}>
                                     <div className="col-md-2">
                                         <div className="card border-0">
                                             <div className="card-img">
@@ -520,17 +482,12 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </Slider>
-                               
+                                </SliderCustom>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
             {/* Liên hệ */}
             <div className='Lien-he position-relative w-100 d-flex justify-content-center'>
                 <div>
