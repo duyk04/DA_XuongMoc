@@ -1,34 +1,3 @@
-/* NavBar */
-.navbar {
-    padding: 1rem 10%;
-}
-
-.navbar .navbar-item li {
-    position: relative;
-    font-family: Gotham-Medium, sans-serif;
-}
-
-.navbar .navbar-item li a {
-    color: #363636;
-}
-
-.navbar .navbar-item .nav-item::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    width: 0%;
-    right: 0;
-    height: 5px;
-    background: #bd945f;
-    transition: 0.3s linear;
-    z-index: 1;
-}
-
-.navbar .navbar-item .nav-item:hover::after {
-    width: 100%;
-    left: 0%;
-    /* background-color: green ; */
-}
 
 .box-container {
     width: 70%;
