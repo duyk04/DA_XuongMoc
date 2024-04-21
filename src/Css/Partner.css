@@ -1,0 +1,36 @@
+/* Partner */
+.Partner .banner p {
+    font-family: Gotham-Ultra;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.Partner .box-container {
+    background-color: #fff;
+    height: max-content;
+    width: 70%;
+    position: relative;
+    top: -3rem;
+    margin-bottom: 5rem;
+}
+
+.Partner h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.Partner .row {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.Partner .content p{
+    text-align: justify;
+    font-family: Gotham-Medium;
+}
+
