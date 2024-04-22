@@ -19,14 +19,14 @@ function App() {
 				{/* Nav */}
 				<Nav />
 				<Routes	>
-					<Route path='/home' element={<Home />}></Route>
-					<Route path='/introduce' element={<Introduce />}></Route>
-					<Route path='/products' element={<Products />}></Route>
-					<Route path='/new' element={<New />}></Route>
-					<Route path='/partner' element={<Partner />}></Route>
-					<Route path='/contact' element={<Contact />}></Route>
+					<Route path='/Home' element={<Home />}></Route>
+					<Route path='/Introduce' element={<Introduce />}></Route>
+					<Route path='/Products' element={<Products />}></Route>
+					<Route path='/New' element={<New />}></Route>
+					<Route path='/Partner' element={<Partner />}></Route>
+					<Route path='/Contact' element={<Contact />}></Route>
 
-					<Route index element={<Navigate to='/home' />} />
+					<Route index element={<Navigate to='/Home' />} />
 					<Route path='*' element={<NotFound />}></Route>
 				</Routes>
 				{/* footer */}
