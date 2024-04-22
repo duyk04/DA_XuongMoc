@@ -13,22 +13,22 @@ function Nav() {
                         <div className='navbar-item '>
                             <ul className='d-flex mb-0 h-100'>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/home"}>Trang chủ</Link>
+                                    <Link to={"/Home"}>Trang chủ</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/introduce"}>Giới thiệu</Link>
+                                    <Link to={"/Introduce"}>Giới thiệu</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/products"}>Sản phẩm</Link>
+                                    <Link to={"/Products"}>Sản phẩm</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/new"}>Tin tức</Link>
+                                    <Link to={"/New"}>Tin tức</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/partner"}>Đối tác</Link>
+                                    <Link to={"/Partner"}>Đối tác</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/contact"}>Liên hệ</Link>
+                                    <Link to={"/Contact"}>Liên hệ</Link>
                                 </li>
                             </ul>
                         </div>
