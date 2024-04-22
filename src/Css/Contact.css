@@ -1,0 +1,76 @@
+/* Contact */
+.Contact .banner p {
+    font-family: Gotham-Ultra;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.Contact .box-container {
+    background-color: #fff;
+    height: max-content;
+    width: 70%;
+    position: relative;
+    top: -3rem;
+    margin-bottom: 2rem;
+}
+
+.Contact h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #bd945f;
+    text-align: start;
+}
+
+.Contact .row {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Contact .input-form {
+    height: 3.8rem;
+    border: 3px solid #bd945f;
+    text-align: start;
+    display: flex;
+    align-items: center; /* Căn dọc các phần tử con theo trục chính */
+    padding-left: 2rem;
+    font-family: Gotham-Medium;
+    margin: 1.5rem 0;
+}
+
+.Contact button{
+    background: #bd945f;
+    float: left;
+    width: 8rem;
+    height: 3.2rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: 0.2rem solid #bd945f;
+    z-index: 0;
+}
+
+.Contact button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+/* .Contact button:hover{
+    background-color: aliceblue;
+} */
+.Contact button:hover::before {
+    width: 100%;
+    left: 0;
+}
+.Contact button:hover{
+    color: #bd945f;
+}
