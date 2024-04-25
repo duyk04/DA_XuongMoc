@@ -11,6 +11,9 @@ import Introduce from './Components/Introduce';
 import Products from './Components/Products';
 import Contact from './Components/Contact';
 import Partner from './Components/Partner';
+import Test from './Components/Test';
+import ListRoom from './Components/ListRoom';
+import NewDetail from './Components/NewDetail';
 
 function App() {
 	return (
@@ -21,8 +24,13 @@ function App() {
 				<Routes	>
 					<Route path='/Home' element={<Home />}></Route>
 					<Route path='/Introduce' element={<Introduce />}></Route>
-					<Route path='/Products' element={<Products />}></Route>
+					{/* <Route path='/Products' element={<Products />}></Route> */}
+					<Route path='/Products' element={<Products />}>
+						<Route path='List_Room' element={<ListRoom />} />
+					</Route>
+
 					<Route path='/New' element={<New />}></Route>
+					<Route path='/NewDetail' element={<NewDetail />}></Route>
 					<Route path='/Partner' element={<Partner />}></Route>
 					<Route path='/Contact' element={<Contact />}></Route>
 
