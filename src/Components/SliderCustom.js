@@ -29,12 +29,12 @@ function SliderCustom({ dots, infinite, speed, slidesToShow, slidesToScroll, aut
     }
     var settings = {
         dots: dots || false,
-        infinite: infinite || false, // lặp lại
-        speed: speed || 700, // tốc dộ cuộn
-        slidesToShow: slidesToShow || 6, // Số lượng slides hiển thị
-        slidesToScroll: slidesToScroll || 1, // Số lượng cuộn slide
-        autoplay: autoplay || false, // Tự động cuộn
-        autoplaySpeed: autoplaySpeed || 5000, // Thời gian chờ giữa các lần cuộn (milliseconds)
+        infinite: infinite || false, 
+        speed: speed || 700, 
+        slidesToShow: slidesToShow || 6, 
+        slidesToScroll: slidesToScroll || 1, 
+        autoplay: autoplay || false, 
+        autoplaySpeed: autoplaySpeed || 5000, 
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />
     };
