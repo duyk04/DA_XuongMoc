@@ -1,0 +1,73 @@
+.List-room {
+    width: 100%;
+}
+.List-room .Banner .box-title{
+    top: 30%;
+    right: 20%;
+}
+
+.List-room .box-title button{
+    width: 185px;
+    height: 50px;
+    background-color: white;
+    float: right;
+}
+.List-room .box-title button:hover{
+    background-color: antiquewhite;
+}
+
+.List-room .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+
+.List-room .Content{
+    background-color: #f3f3f3;
+}
+
+.List-room h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.List-room h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 80%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.List-room .btnViewAll{
+    font-size: 1.2rem;
+    font-family: Gotham-Medium;
+    background-color: #fff;
+}
+
+.List-room .btn-page div{
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.List-room .btn-page div:hover{
+    background-color: #bd945f;
+    color: black;
+    cursor: pointer;
+}
+
+.List-room .ranger-price:nth-child(n+2){
+    color: #bd945f;
+}

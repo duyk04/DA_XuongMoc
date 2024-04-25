@@ -1,0 +1,60 @@
+.NewDetail{
+    background-color: #f3f3f3;
+}
+.NewDetail .Banner .box-title {
+    top: 30%;
+    right: 20%;
+}
+
+.NewDetail .box-title button {
+    width: 185px;
+    height: 50px;
+    background-color: white;
+    float: right;
+}
+
+.NewDetail .box-title button:hover {
+    background-color: antiquewhite;
+}
+
+.NewDetail .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+
+.NewDetail .Content {
+    background-color: #f3f3f3;
+}
+
+.NewDetail h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.NewDetail h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 80%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.NewDetail .title{
+    font-family: Gotham-Ultra;
+    font-size: 1.4rem;
+    text-align: start;
+    color: #bd945f;
+}
+.NewDetail p{
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
