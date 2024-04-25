@@ -1,6 +1,11 @@
 import React from 'react'
+import { BrowserRouter, Route, Navigate, Routes, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import '../Css/Products.css'
 import SliderCustom from './SliderCustom'
+import Test from './Test';
+import NotFound from './NotFound';
+import ListRoom from './ListRoom';
 function Products() {
 	return (
 		<>
@@ -12,7 +17,7 @@ function Products() {
 							<div className='position-absolute box-title'>
 								<img loading='lazy' src='../images/AnhCatTC/Products/Title.png' />
 								<br />
-								<button>Mua ngay</button>
+								<Link to={'/TestRouter'}><button>Mua ngay</button></Link>
 							</div>
 						</div>
 						<div className='position-relative'>
@@ -20,7 +25,7 @@ function Products() {
 							<div className='position-absolute box-title'>
 								<img loading='lazy' src='../images/AnhCatTC/Products/Title.png' />
 								<br />
-								<button>Mua ngay</button>
+								<Link to={'/TestRouter'}><button>Mua ngay</button></Link>
 							</div>
 						</div>
 						<div className='position-relative'>
@@ -28,7 +33,7 @@ function Products() {
 							<div className='position-absolute box-title'>
 								<img loading='lazy' src='../images/AnhCatTC/Products/Title.png' />
 								<br />
-								<button>Mua ngay</button>
+								<Link to={'/TestRouter'}><button>Mua ngay</button></Link>
 							</div>
 						</div>
 						<div className='position-relative'>
@@ -36,7 +41,7 @@ function Products() {
 							<div className='position-absolute box-title'>
 								<img loading='lazy' src='../images/AnhCatTC/Products/Title.png' />
 								<br />
-								<button>Mua ngay</button>
+								<Link to={'/TestRouter'}><button>Mua ngay</button></Link>
 							</div>
 						</div>
 						<div className='position-relative'>
@@ -44,14 +49,24 @@ function Products() {
 							<div className='position-absolute box-title'>
 								<img loading='lazy' src='../images/AnhCatTC/Products/Title.png' />
 								<br />
-								<button>Mua ngay</button>
+								<Link to={'/TestRouter'}><button>Mua ngay</button></Link>
 							</div>
 						</div>
 					</SliderCustom>
 				</div>
-
 				{/* Content */}
 				<div className='Content d-flex flex-column align-items-center'>
+					{/* <BrowserRouter>
+						
+						<Routes	>
+							<Route path='/Test' element={<Test />}></Route>
+							<Route path='*' element={<NotFound />}></Route>
+						</Routes>
+					</BrowserRouter> */}
+					<Outlet>
+						<Test/>
+						<ListRoom/>
+					</Outlet>
 					{/* Phòng khách */}
 					<div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
@@ -59,7 +74,7 @@ function Products() {
 								<h4>Phòng khách</h4>
 							</div>
 							<div className='col d-flex justify-content-end align-items-center'>
-								<button className='btnViewAll'>XEM TẤT CẢ</button>
+								<button className='btnViewAll'><Link to={'List_Room'}>XEM TẤT CẢ</Link></button>
 							</div>
 						</div>
 						<div className='row mx-5 mb-4'>
