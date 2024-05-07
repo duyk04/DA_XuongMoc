@@ -1,0 +1,51 @@
+.DetailsProduct{
+   background-color: #f3f3f3;;
+}
+
+.DetailsProduct .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+.DetailsProduct h4{
+    font-family: Gotham-Medium;
+    color: var(--color);
+    font-size: 2rem;
+}
+.DetailsProduct .btn-left{
+    left: -20px;
+    top :50%;
+    transform: translateY(-50%);
+}
+.DetailsProduct .btn-right{
+    right: -20px;
+    top :50%;
+    transform: translateY(-50%);
+}
+.DetailsProduct .btn-chatlieu{
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 3px solid #898989;
+    width: 10rem;
+    height: 2.5rem;
+    margin: 0 15px;
+}
+.DetailsProduct .btn-chatlieu:hover{
+    border: 3px solid #bd945f;
+}
+.DetailsProduct .price-old{
+    font-family: Gotham-Medium;
+    font-weight: 100;
+    text-align: start;
+    font-size: 0.8rem;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-decoration: line-through !important;
+}
+.DetailsProduct .price-new{
+    font-family: Gotham-Medium;
+    text-align: start;
+    font-size: 1rem;
+    padding: 0;
+    color: #bd945f;
+}
