@@ -1,17 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Route, Navigate, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import '../Css/Products.css'
 import SliderCustom from './SliderCustom'
 import Test from './Test';
-import NotFound from './NotFound';
 import ListRoom from './ListRoom';
 function Products() {
 	return (
 		<>
 			<div className='Products w-100'>
 				<div className='Banner'>
-					<SliderCustom slidesToShow={1} speed={1000} autoplaySpeed={6000} btnArrow={false} autoplay={true} infinite={true}>
+					<SliderCustom slidesToShow={1} speed={1000} autoplaySpeed={5000} btnArrow={false} autoplay={true} infinite={true}>
 						<div className='position-relative'>
 							<img loading='lazy' src='../images/AnhCatTC/Products/Banner.png' alt='Banner' className='w-100' />
 							<div className='position-absolute box-title'>
