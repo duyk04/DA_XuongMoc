@@ -14,6 +14,7 @@ import Partner from './Components/Partner';
 import Test from './Components/Test';
 import ListRoom from './Components/ListRoom';
 import NewDetail from './Components/NewDetail';
+import DetailsProduct from './Components/DetailsProduct';
 
 function App() {
 	return (
@@ -33,6 +34,8 @@ function App() {
 					<Route path='/NewDetail' element={<NewDetail />}></Route>
 					<Route path='/Partner' element={<Partner />}></Route>
 					<Route path='/Contact' element={<Contact />}></Route>
+
+					<Route path='/DetailsProduct' element={<DetailsProduct />}></Route>
 
 					<Route index element={<Navigate to='/Home' />} />
 					<Route path='*' element={<NotFound />}></Route>
