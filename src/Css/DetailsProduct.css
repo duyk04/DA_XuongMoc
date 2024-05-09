@@ -1,51 +1,158 @@
-.DetailsProduct{
-   background-color: #f3f3f3;;
+.DetailsProduct {
+    background-color: #f3f3f3;
+    ;
 }
 
 .DetailsProduct .box-container {
     width: 70%;
     background-color: #fff;
 }
-.DetailsProduct h4{
+
+.DetailsProduct h3 {
     font-family: Gotham-Medium;
     color: var(--color);
     font-size: 2rem;
 }
-.DetailsProduct .btn-left{
+
+.DetailsProduct .btn-left {
     left: -20px;
-    top :50%;
+    top: 50%;
     transform: translateY(-50%);
+    background-color: #fff;
 }
-.DetailsProduct .btn-right{
+
+.DetailsProduct .btn-right {
     right: -20px;
-    top :50%;
+    top: 50%;
     transform: translateY(-50%);
+    background-color: #fff;
 }
-.DetailsProduct .btn-chatlieu{
+
+.DetailsProduct .btn-chatlieu {
     font-family: Gotham-Medium;
     font-size: 1rem;
     background-color: #fff;
     border: 3px solid #898989;
-    width: 10rem;
+    width: 45%;
     height: 2.5rem;
-    margin: 0 15px;
 }
-.DetailsProduct .btn-chatlieu:hover{
+
+.DetailsProduct .btn-chatlieu:nth-child(2) {
+    margin-right: 10%;
+}
+
+.DetailsProduct .btn-chatlieu:hover {
     border: 3px solid #bd945f;
 }
-.DetailsProduct .price-old{
+
+.DetailsProduct .price-old {
     font-family: Gotham-Medium;
     font-weight: 100;
     text-align: start;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding-top: 20px;
     padding-bottom: 0;
     text-decoration: line-through !important;
 }
-.DetailsProduct .price-new{
+
+.DetailsProduct .price-new {
     font-family: Gotham-Medium;
     text-align: start;
-    font-size: 1rem;
+    font-size: 1.8rem;
     padding: 0;
     color: #bd945f;
+}
+
+.DetailsProduct .btnBh {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 3px solid #898989;
+    height: 2.5rem;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.DetailsProduct .btn-tt button {
+    background-color: #fff;
+    font-family: Gotham-Medium;
+    font-size: 1.5rem;
+    color: #bd945f;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.DetailsProduct .btn-tt button:nth-child(n+2)::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: #bd945f;
+    left: -14px;
+}
+
+.DetailsProduct .btn-tt button:hover {
+    color: black;
+}
+
+.DetailsProduct .tt-sanpham {
+    border-top: 3px solid #bd945f;
+    font-family: Gotham-Medium;
+}
+
+.DetailsProduct .tt-sanpham p{
+    font-family: Gotham-Medium;
+    font-size: 1rem
+}
+
+.DetailsProduct h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Medium;
+    color: var(--color);
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.DetailsProduct h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 80%;
+    max-width: 10rem;
+    border-top: 0.5rem solid #bd945f;
+}
+
+.DetailsProduct .btnViewAll {
+    background-color: #fff;
+}
+
+.DetailsProduct .btnViewAll a {
+    font-size: 1.2rem;
+    position: relative;
+    font-family: Gotham-Medium;
+    color: black;
+}
+
+.DetailsProduct .btnViewAll a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    right: 0;
+    height: 5px;
+    background: #bd945f;
+    transition: 0.3s linear;
+    z-index: 0;
+}
+
+.DetailsProduct .btnViewAll a:hover::after {
+    width: 100%;
+    left: 0%;
+    /* background-color: green ; */
 }
