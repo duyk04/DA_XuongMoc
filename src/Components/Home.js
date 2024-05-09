@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../Css/style.css'
 import SliderCustom from './SliderCustom';
 
@@ -358,9 +359,10 @@ function Home() {
                                 </div>
                             </div>
                             <div className='row'>
-                                <a href="#">
+                                <Link to={"/New"}>
                                     <p className='text-uppercase text-more mt-5'>Xem thêm <i className="fa-solid fa-arrow-right fa-xl"></i></p>
-                                </a>
+                                </Link>
+                             
                             </div>
                         </div>
                         <div className='col-md-5 New-second' >
