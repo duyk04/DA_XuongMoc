@@ -7,7 +7,9 @@ function Nav() {
             <nav className='navbar w-100  navbar-light bg-light'>
                 <div className='w-100'>
                     <div className='float-start'>
-                        <img src='../images/AnhCatTC/logo.png' alt='logo' />
+                        <Link to={"/Home"}>
+                            <img src='../images/AnhCatTC/logo.png' alt='logo' />
+                        </Link>
                     </div>
                     <div className='float-end d-flex align-items-center' style={{ height: 96 }}>
                         <div className='navbar-item '>
