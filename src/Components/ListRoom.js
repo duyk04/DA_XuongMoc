@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Css/ListRoom.css'
 
 function ListRoom() {
     return (
         <>
             <div className='List-room d-flex flex-column align-items-center'>
-                <div className='box-container row pt-4'> 
+                <div className='box-container row pt-4'>
                     <div className='col-8'>
                         <ul className='d-flex'>
                             <li className='mx-3 ranger-price'>Chọn mức giá:</li>
@@ -37,14 +38,14 @@ function ListRoom() {
                     </div>
                     <div className='row mx-5 mb-4'>
                         <div className='col-md-3'>
-                            <a href='#'>
+                            <Link to={"/DetailsProduct"}>
                                 <div className='d-flex justify-content-center'>
                                     <div className='w-100' style={{ overflow: 'hidden' }}>
                                         <img loading='lazy' src='../images/AnhCatTC/Products/phong_khach/banuongnuoc_1.png' alt='img' className='img-hover w-100' />
                                     </div>
                                 </div>
                                 <p className='mb-1 text-uppercase'>Bàn uống nước</p>
-                            </a>
+                            </Link>
                             <div>
                                 <span>
                                     <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
