@@ -73,7 +73,7 @@ function Products() {
 								<h4>Phòng khách</h4>
 							</div>
 							<div className='col d-flex justify-content-end align-items-center'>
-								<button className='btnViewAll'><Link to={'List_Room'}>XEM TẤT CẢ</Link></button>
+								<button className='btnViewAll'><Link to={'ListRoom'}>XEM TẤT CẢ</Link></button>
 							</div>
 						</div>
 						<div className='row mx-5 mb-4'>
