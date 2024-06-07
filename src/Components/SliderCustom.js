@@ -7,34 +7,30 @@ function SliderCustom({ dots, infinite, speed, slidesToShow, slidesToScroll, aut
     const displayArrow = btnArrow ? "block" : "none";
     const CustomPrevArrow = (props) => {
         const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: displayArrow, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', left: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
-                onClick={onClick}
-            >
-            </div>
+        return ( 
+                <img src='..\images\AnhCatTC\button-left.png' alt='...' 
+                // className={className}
+                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', left: '-50px', transform: 'translateY(50%)', zIndex: '1000'}} />
+
         );
     }
     const CustomNextArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-            <div
-                className={className}
-                style={{ ...style, display: displayArrow, backgroundColor: 'gray', borderRadius: '50%', padding: '10px', position: 'absolute', top: '50%', right: '-30px', transform: 'translateY(-50%)', zIndex: '1000' }}
-                onClick={onClick}
-            >
-            </div>
+            <img src='..\images\AnhCatTC\button-right.png' alt='...' 
+                // className={className}
+                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', right: '-50px', transform: 'translateY(50%)', zIndex: '1000'}} />
+
         );
     }
     var settings = {
         dots: dots || false,
-        infinite: infinite || false, 
-        speed: speed || 700, 
-        slidesToShow: slidesToShow || 6, 
-        slidesToScroll: slidesToScroll || 1, 
-        autoplay: autoplay || false, 
-        autoplaySpeed: autoplaySpeed || 5000, 
+        infinite: infinite || false,
+        speed: speed || 700,
+        slidesToShow: slidesToShow || 6,
+        slidesToScroll: slidesToScroll || 1,
+        autoplay: autoplay || false,
+        autoplaySpeed: autoplaySpeed || 5000,
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />
     };
