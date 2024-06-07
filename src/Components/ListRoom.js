@@ -13,7 +13,7 @@ function ListRoom() {
                             <li className='mx-3 ranger-price'>Dưới 5 triệu</li>
                             <li className='mx-3 ranger-price'>5 - 10 triệu</li>
                             <li className='mx-3 ranger-price'>10 - 15 triệu</li>
-                            <li className='mx-3 ranger-price'>Trên 15 triêu</li>
+                            <li className='mx-3 ranger-price'>Trên 15 triệu</li>
                         </ul>
                     </div>
                     <div className='col-4 '>
