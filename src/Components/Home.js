@@ -26,16 +26,22 @@ function Home() {
                     <div className='list-categories w-100'>
                         <div className='row'>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Phòng khách', classify: '1' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-khach.png' alt='img' />
                                     <p>Phòng khách</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Phòng ngủ', classify: '2' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-ngu.png' alt='img' />
                                     <p>Phòng ngủ</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
                                 <a href='#'>
@@ -79,7 +85,7 @@ function Home() {
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
                     <div className='list-product'>
-                            {/* <div className='position-absolute' style={{ left: '-25px' }}>
+                        {/* <div className='position-absolute' style={{ left: '-25px' }}>
                                 <button>
                                     <img src='..\images\AnhCatTC\button-left.png' alt='...' />
                                 </button>
@@ -214,10 +220,10 @@ function Home() {
                                 <button>
                                     <img src='..\images\AnhCatTC\button-right.png' alt='...' />
                                 </button>
-                            </div> */} 
-                        <OutstandingProducts/>
+                            </div> */}
+                        <OutstandingProducts />
                     </div>
-                   
+
 
                 </div>
             </div>
@@ -367,7 +373,7 @@ function Home() {
                                 <Link to={"/New"}>
                                     <p className='text-uppercase text-more mt-5'>Xem thêm <i className="fa-solid fa-arrow-right fa-xl"></i></p>
                                 </Link>
-                             
+
                             </div>
                         </div>
                         <div className='col-md-5 New-second' >
