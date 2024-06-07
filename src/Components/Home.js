@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Css/style.css'
 import SliderCustom from './SliderCustom';
+import OutstandingProducts from './OutstandingProducts';
 
 function Home() {
     return (
@@ -12,10 +13,10 @@ function Home() {
                 </div>
                 <div className='title-banner position-absolute text-start'>
                     <div>
-                        <h1>THẾ GIỚi NỘI THẤT SỐ 1 VIỆT NAM</h1>
+                        <h1 className='mx-0'>THẾ GIỚi NỘI THẤT SỐ 1 VIỆT NAM</h1>
                         <span>HOÀNG HOAN</span>
                         <p>Sứ mệnh của chúng tôi là kết hợp hài hòa giữa ý tưởng và mong muốn của khách hàng, đem lại những phút giây thư giãn tuyệt vời bên gia đình và những người thân yêu.</p>
-                        <button>LIÊN HỆ NGAY</button>
+                        <Link to={"/Contact"}><button>LIÊN HỆ NGAY</button></Link>
                     </div>
                 </div>
             </div>
@@ -77,142 +78,146 @@ function Home() {
                     <div className='slide-product mt-5 mb-3'>
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
-                    <div className='list-product d-flex align-items-center position-relative mb-4'>
-                        <div className='position-absolute' style={{ left: '-25px' }}>
-                            <button>
-                                <img src='..\images\AnhCatTC\button-left.png' alt='...' />
-                            </button>
-                        </div>
-                        <div className='col-md-3'>
-                            <a href='#'>
-                                <div className='d-flex justify-content-center'>
-                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
-                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-1.jpg' alt='img' className='img-hover' />
-                                    </div>
-                                </div>
-                                <p className='mb-1'>Giường châu âu</p>
-                            </a>
-                            <div>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
+                    <div className='list-product'>
+                            {/* <div className='position-absolute' style={{ left: '-25px' }}>
+                                <button>
+                                    <img src='..\images\AnhCatTC\button-left.png' alt='...' />
+                                </button>
                             </div>
-                            <p className='describe'>
-                                (Size lớn, trắng sữa)
-                            </p>
-                            <p className='mt-0'>8.999.999 VND</p>
-                        </div>
-                        <div className='col-md-3'>
-                            <a href='#'>
-                                <div className='d-flex justify-content-center'>
-                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
-                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' className='img-hover' />
+                            <div className='col-md-3'>
+                                <a href='#'>
+                                    <div className='d-flex justify-content-center'>
+                                        <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                            <img src='../images/AnhCatTC/san-pham-noi-bat/sp-1.jpg' alt='img' className='img-hover' />
+                                        </div>
                                     </div>
+                                    <p className='mb-1'>Giường châu âu</p>
+                                </a>
+                                <div>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
                                 </div>
-                                <p className='mb-1'>Bàn làm việc</p>
-                            </a>
-                            <div>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
+                                <p className='describe'>
+                                    (Size lớn, trắng sữa)
+                                </p>
+                                <p className='mt-0'>8.999.999 VND</p>
                             </div>
-                            <p className='describe'>
-                                (Size lớn, trắng nâu)
-                            </p>
-                            <p className='mt-0'>3.999.999 VND</p>
-                        </div>
-                        <div className='col-md-3'>
-                            <a href='#'>
-                                <div className='d-flex justify-content-center'>
-                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
-                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' className='img-hover' />
+                            <div className='col-md-3'>
+                                <a href='#'>
+                                    <div className='d-flex justify-content-center'>
+                                        <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                            <img src='../images/AnhCatTC/san-pham-noi-bat/sp-2.jpg' alt='img' className='img-hover' />
+                                        </div>
                                     </div>
+                                    <p className='mb-1'>Bàn làm việc</p>
+                                </a>
+                                <div>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
                                 </div>
-                                <p className='mb-1'>Tủ quần áo</p>
-                            </a>
-                            <div>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
+                                <p className='describe'>
+                                    (Size lớn, trắng nâu)
+                                </p>
+                                <p className='mt-0'>3.999.999 VND</p>
                             </div>
-                            <p className='describe'>
-                                (4 ngăn, trắng gỗ)
-                            </p>
-                            <p className='mt-0'>12.999.999 VND</p>
-                        </div>
-                        <div className='col-md-3'>
-                            <a href='#'>
-                                <div className='d-flex justify-content-center'>
-                                    <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
-                                        <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' className='img-hover' />
+                            <div className='col-md-3'>
+                                <a href='#'>
+                                    <div className='d-flex justify-content-center'>
+                                        <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                            <img src='../images/AnhCatTC/san-pham-noi-bat/sp-3.jpg' alt='img' className='img-hover' />
+                                        </div>
                                     </div>
+                                    <p className='mb-1'>Tủ quần áo</p>
+                                </a>
+                                <div>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
                                 </div>
-                                <p className='mb-1'>Kệ để đồ</p>
-                            </a>
-                            <div>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
-                                </span>
-                                <span>
-                                    <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
-                                </span>
+                                <p className='describe'>
+                                    (4 ngăn, trắng gỗ)
+                                </p>
+                                <p className='mt-0'>12.999.999 VND</p>
                             </div>
-                            <p className='describe'>
-                                (Size lớn, trắng sữa)
-                            </p>
-                            <p className='mt-0'>2.499.999 VND</p>
-                        </div>
-                        <div className='position-absolute' style={{ right: '-25px' }}>
-                            <button>
-                                <img src='..\images\AnhCatTC\button-right.png' alt='...' />
-                            </button>
-                        </div>
+                            <div className='col-md-3'>
+                                <a href='#'>
+                                    <div className='d-flex justify-content-center'>
+                                        <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
+                                            <img src='../images/AnhCatTC/san-pham-noi-bat/sp-4.jpg' alt='img' className='img-hover' />
+                                        </div>
+                                    </div>
+                                    <p className='mb-1'>Kệ để đồ</p>
+                                </a>
+                                <div>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg mx-2" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                    <span>
+                                        <i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
+                                    </span>
+                                </div>
+                                <p className='describe'>
+                                    (Size lớn, trắng sữa)
+                                </p>
+                                <p className='mt-0'>2.499.999 VND</p>
+                            </div>
+                        
+                        
+                            <div className='position-absolute' style={{ right: '-25px' }}>
+                                <button>
+                                    <img src='..\images\AnhCatTC\button-right.png' alt='...' />
+                                </button>
+                            </div> */} 
+                        <OutstandingProducts/>
                     </div>
+                   
 
                 </div>
             </div>
