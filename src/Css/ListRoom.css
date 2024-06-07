@@ -68,6 +68,7 @@
     cursor: pointer;
 }
 
-.List-room .ranger-price:nth-child(n+2){
+.List-room .ranger-price:nth-child(n+2) button{
     color: #bd945f;
+    background-color: #fff;
 }
