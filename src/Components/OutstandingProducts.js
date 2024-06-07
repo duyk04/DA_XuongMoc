@@ -6,7 +6,7 @@ import SliderCustom from './SliderCustom';
 
 function OutstandingProducts() {
 
-    const { data, error } = useFetchData('api_XuongMocs');
+    const { data, error } = useFetchData('api_XuongMoc');
 
     //const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -29,7 +29,7 @@ function OutstandingProducts() {
     // }, []);
 
     useEffect(() => {
-        // Lọc dữ liệu có classify = 2 sau khi nhận dữ liệu từ API
+        // Lọc dữ liệu có classify = 5 sau khi nhận dữ liệu từ API
         const filtered = data.filter(item => item.star === "5");
         setFilteredData(filtered);
     }, [data]);
@@ -51,8 +51,8 @@ function OutstandingProducts() {
     };
     return (
         <>
-            {error && <p>Error fetching data: {error.message}</p>}
-            <SliderCustom slidesToShow={4} infinite={true} slidesToScroll={1} btnArrow={'block'}>
+            {error && <p className='alert alert-danger'>Error fetching data: {error.message}</p>}
+            <SliderCustom autoplay={false} autoplaySpeed={0} speed={700} slidesToShow={4} infinite={true} slidesToScroll={4} btnArrow={'block'} >
                 {/* <Products /> */}
                 {filteredData.map((item, index) => (
                     <div className='col-md-3' key={index}>
