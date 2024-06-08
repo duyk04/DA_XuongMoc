@@ -44,40 +44,58 @@ function Home() {
                                 </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Phòng bếp', classify: '3' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-bep.png' alt='img' />
                                     <p>Phòng bếp</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Phòng tắm', classify: '4' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-tam.png' alt='img' />
                                     <p>Phòng tắm</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Trẻ em', classify: '5' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-tre-em.png' alt='img' />
                                     <p>Trẻ em</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Văn Phòng', classify: '6' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-van-phong.png' alt='img' />
                                     <p>Văn Phòng</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Cầu thang', classify: '7' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-cau-thang.png' alt='img' />
                                     <p>Cầu thang</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className='col-md-3'>
-                                <a href='#'>
+                                <Link
+                                    to='/Products/ListRoom'
+                                    state={{ category: 'Đồ trang trí', classify: '8' }}
+                                >
                                     <img src='../images/AnhCatTC/loai-sp/icon-do-trang-tri.png' alt='img' />
                                     <p>Đồ trang trí</p>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -214,8 +232,6 @@ function Home() {
                                 </p>
                                 <p className='mt-0'>2.499.999 VND</p>
                             </div>
-                        
-                        
                             <div className='position-absolute' style={{ right: '-25px' }}>
                                 <button>
                                     <img src='..\images\AnhCatTC\button-right.png' alt='...' />
