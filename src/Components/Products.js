@@ -55,13 +55,6 @@ function Products() {
 				</div>
 				{/* Content */}
 				<div className='Content d-flex flex-column align-items-center'>
-					{/* <BrowserRouter>
-						
-						<Routes	>
-							<Route path='/Test' element={<Test />}></Route>
-							<Route path='*' element={<NotFound />}></Route>
-						</Routes>
-					</BrowserRouter> */}
 					<Outlet>
 						<Test/>
 						<ListRoom/>
@@ -73,7 +66,7 @@ function Products() {
 								<h4>Phòng khách</h4>
 							</div>
 							<div className='col d-flex justify-content-end align-items-center'>
-								<button className='btnViewAll'><Link to={'ListRoom'}>XEM TẤT CẢ</Link></button>
+								<button className='btnViewAll'><Link to={'ListRoom'} state={{ category: 'Phòng khách', classify: '1' }}>XEM TẤT CẢ</Link></button>
 							</div>
 						</div>
 						<div className='row mx-5 mb-4'>
