@@ -53,6 +53,33 @@ function ListRoom() {
         setFilterePrice(filtered);
     };
 
+    const handleSort = (sortType) => {
+        let sortedData = [...filterePrice];
+
+        switch (sortType) {
+            case "1": // Mới nhất
+                sortedData.sort((a, b) => new Date(b.date) - new Date(a.date));
+                break;
+            case "2": // Phổ biến nhất
+                sortedData.sort((a, b) => b.popularity - a.popularity);
+                break;
+            case "3": // Giá cao đến thấp
+                sortedData.sort((a, b) => parseInt(b.price, 10) - parseInt(a.price, 10));
+                break;
+            case "4": // Giá thấp đến cao
+                sortedData.sort((a, b) => parseInt(a.price, 10) - parseInt(b.price, 10));
+                break;
+            default:
+                break;
+        }
+
+        setFilterePrice(sortedData);
+    };
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+
     const renderStars = (starCount) => {
         let stars = [];
         for (let i = 0; i < starCount; i++) {
@@ -104,8 +131,7 @@ function ListRoom() {
                         </ul>
                     </div>
                     <div className='col-4 '>
-                        {/* <label > Sắp xếp</label> */}
-                        <select className='float-end' type='seclect'>
+                        <select className='float-end' onChange={(e) => handleSort(e.target.value)}>
                             <option value={0}>Sắp xếp</option>
                             <option value={1}>Mới nhất</option>
                             <option value={2}>Phổ biến nhất</option>
