@@ -1,11 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import '../Css/Products.css'
 import SliderCustom from './SliderCustom'
 import Test from './Test';
 import ListRoom from './ListRoom';
+import AllProducts from './AllProducts';
 function Products() {
+
+	const [showAllProducts, setShowAllProducts] = useState(true);
+	const location = useLocation();
+	useEffect(() => {
+		// Kiểm tra trạng thái được truyền qua Link
+		if (location.state && location.state.showAllProducts !== undefined) {
+			setShowAllProducts(location.state.showAllProducts);
+		}
+	}, [location.state]);
+
 	return (
 		<>
 			<div className='Products w-100'>
@@ -56,11 +67,15 @@ function Products() {
 				{/* Content */}
 				<div className='Content d-flex flex-column align-items-center'>
 					<Outlet>
-						<Test/>
-						<ListRoom/>
+						<Test />
+						{/* <ListRoom/> */}
+						{!showAllProducts && <ListRoom />}
 					</Outlet>
+					{/* <AllProducts/> */}
+					{showAllProducts && <AllProducts />}
+
 					{/* Phòng khách */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Phòng khách</h4>
@@ -195,10 +210,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Phòng ngủ*/}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Phòng ngủ</h4>
@@ -333,10 +348,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Phòng bếp */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Phòng bếp</h4>
@@ -471,10 +486,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Phòng tắm */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Phòng tắm</h4>
@@ -609,10 +624,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Trẻ em */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Trẻ em</h4>
@@ -747,10 +762,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Văn phòng */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>văn phòng</h4>
@@ -885,10 +900,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Cầu thang */}
-					<div className='box-container mt-5'>
+					{/* <div className='box-container mt-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>cầu thang</h4>
@@ -1023,10 +1038,10 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{/* Trang trí */}
-					<div className='box-container mt-5 mb-5'>
+					{/* <div className='box-container mt-5 mb-5'>
 						<div className='row mt-5 mx-5'>
 							<div className='col'>
 								<h4>Trang trí</h4>
@@ -1161,7 +1176,7 @@ function Products() {
 								<p className='mt-0'>12.499.999 VND</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</>
