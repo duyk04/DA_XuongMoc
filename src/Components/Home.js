@@ -28,7 +28,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Phòng khách', classify: '1' }}
+                                    state={{ category: 'Phòng khách', classify: '1'}}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-khach.png' alt='img' />
                                     <p>Phòng khách</p>
