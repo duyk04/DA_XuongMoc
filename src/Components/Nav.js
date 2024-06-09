@@ -21,7 +21,7 @@ function Nav() {
                                     <Link to={"/Introduce"}>Giới thiệu</Link>
                                 </li>
                                 <li className="nav-item mx-4">
-                                    <Link to={"/Products"}>Sản phẩm</Link>
+                                    <Link to={"/Products"} state={{showAllProducts: true}}>Sản phẩm</Link>
                                 </li>
                                 <li className="nav-item mx-4">
                                     <Link to={"/New"}>Tin tức</Link>
