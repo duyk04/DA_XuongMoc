@@ -28,6 +28,18 @@
     z-index: 0;
 }
 
+.navbar .navbar-item .nav-active a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    right: 0;
+    height: 5px;
+    background: #bd945f;
+    transition: 0.3s linear;
+    z-index: 0;
+}
+
 .navbar .navbar-item .nav-item a:hover::after {
     width: 100%;
     left: 0%;
