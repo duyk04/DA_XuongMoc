@@ -12,15 +12,15 @@ export default function CircularIndeterminate() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [pathname]);
 
   return (
     loading ? (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', zIndex: '1000' }}>
-        <CircularProgress />
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '1000', position: 'absolute', top: "128px", left: 0, bottom: 0, right: 0, backgroundColor:'#fff' }}>
+        <CircularProgress style={{ color: '#bd945f' }} />
       </Box>
     ) : null
   );
