@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Navigate, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Navigate, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,13 +17,14 @@ import NewDetail from './Components/NewDetail';
 import DetailsProduct from './Components/DetailsProduct';
 import ScrollToTop from './hook/ScrollToTop';
 import CircularIndeterminate from './hook/CircularIndeterminate';
+import ScrollToTopButton from './hook/ScrollToTopButton';
 
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
 				{/* Nav */}
-				{/* <ScrollToTop /> */}
+				<ScrollToTop />
 				<CircularIndeterminate/>
 				<Nav />
 				<Routes	>
@@ -49,6 +50,7 @@ function App() {
 				</Routes>
 				{/* footer */}
 				<Footer />
+				<ScrollToTopButton />
 			</BrowserRouter>
 			{/* <Nav />
 			<Home />
