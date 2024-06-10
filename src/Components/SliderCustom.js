@@ -10,7 +10,7 @@ function SliderCustom({ dots, infinite, speed, slidesToShow, slidesToScroll, aut
         return ( 
                 <img src='..\images\AnhCatTC\button-left.png' alt='...' 
                 // className={className}
-                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', left: '-50px', transform: 'translateY(50%)', zIndex: '1000'}} />
+                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', left: '-50px', transform: 'translateY(50%)', zIndex: '1000', cursor: 'pointer'}} />
 
         );
     }
@@ -19,7 +19,7 @@ function SliderCustom({ dots, infinite, speed, slidesToShow, slidesToScroll, aut
         return (
             <img src='..\images\AnhCatTC\button-right.png' alt='...' 
                 // className={className}
-                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', right: '-50px', transform: 'translateY(50%)', zIndex: '1000'}} />
+                onClick={onClick} style={{...style, display: displayArrow,position: 'absolute', top: '40%', right: '-50px', transform: 'translateY(50%)', zIndex: '1000', cursor: 'pointer'}} />
 
         );
     }
