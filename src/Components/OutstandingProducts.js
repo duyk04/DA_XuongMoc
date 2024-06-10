@@ -55,9 +55,9 @@ function OutstandingProducts() {
             <SliderCustom autoplay={false} autoplaySpeed={0} speed={700} slidesToShow={4} infinite={true} slidesToScroll={4} btnArrow={'block'} >
                 {/* <Products /> */}
                 {filteredData.map((item, index) => (
-                    <div className='col-md-3' key={index}>
+                    <div className='col-md-3 cards' key={index}>
                         <a href='#'>
-                            <div className='d-flex justify-content-center'>
+                            <div className='d-flex justify-content-center pt-4'>
                                 <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
                                     <img src={item.url_image} alt={item.name} className='img-hover' />
                                 </div>
