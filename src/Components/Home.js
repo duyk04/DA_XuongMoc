@@ -28,7 +28,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Phòng khách', classify: '1'}}
+                                    state={{ category: 'Phòng khách', classify: '1', showAllProducts: false}}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-khach.png' alt='img' />
                                     <p>Phòng khách</p>
@@ -37,7 +37,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Phòng ngủ', classify: '2' }}
+                                    state={{ category: 'Phòng ngủ', classify: '2', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-ngu.png' alt='img' />
                                     <p>Phòng ngủ</p>
@@ -46,7 +46,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Phòng bếp', classify: '3' }}
+                                    state={{ category: 'Phòng bếp', classify: '3', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-bep.png' alt='img' />
                                     <p>Phòng bếp</p>
@@ -55,7 +55,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Phòng tắm', classify: '4' }}
+                                    state={{ category: 'Phòng tắm', classify: '4', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-phong-tam.png' alt='img' />
                                     <p>Phòng tắm</p>
@@ -64,7 +64,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Trẻ em', classify: '5' }}
+                                    state={{ category: 'Trẻ em', classify: '5', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-tre-em.png' alt='img' />
                                     <p>Trẻ em</p>
@@ -73,7 +73,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Văn Phòng', classify: '6' }}
+                                    state={{ category: 'Văn Phòng', classify: '6', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-van-phong.png' alt='img' />
                                     <p>Văn Phòng</p>
@@ -82,7 +82,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Cầu thang', classify: '7' }}
+                                    state={{ category: 'Cầu thang', classify: '7', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-cau-thang.png' alt='img' />
                                     <p>Cầu thang</p>
@@ -91,7 +91,7 @@ function Home() {
                             <div className='col-md-3'>
                                 <Link
                                     to='/Products/ListRoom'
-                                    state={{ category: 'Đồ trang trí', classify: '8' }}
+                                    state={{ category: 'Đồ trang trí', classify: '8', showAllProducts: false }}
                                 >
                                     <img src='../images/AnhCatTC/loai-sp/icon-do-trang-tri.png' alt='img' />
                                     <p>Đồ trang trí</p>
@@ -102,7 +102,7 @@ function Home() {
                     <div className='slide-product mt-5 mb-3'>
                         <h4>SẢN PHẨM NỔI BẬT</h4>
                     </div>
-                    <div className='list-product'>
+                    <div className='list-product mb-4'>
                         {/* <div className='position-absolute' style={{ left: '-25px' }}>
                                 <button>
                                     <img src='..\images\AnhCatTC\button-left.png' alt='...' />
@@ -239,8 +239,6 @@ function Home() {
                             </div> */}
                         <OutstandingProducts />
                     </div>
-
-
                 </div>
             </div>
 
@@ -556,10 +554,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </>
     )
 }
