@@ -71,3 +71,8 @@
     left: 0%;
     /* background-color: green ; */
 }
+
+.cards:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
