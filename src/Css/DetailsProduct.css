@@ -41,8 +41,8 @@
     margin-right: 10%;
 }
 
-.DetailsProduct .btn-chatlieu:hover {
-    border: 3px solid #bd945f;
+.DetailsProduct .btn-chatlieu:hover, .btn-addCart:hover  {
+    border: 3px solid #bd945f !important;
 }
 
 .DetailsProduct .price-old {
@@ -74,6 +74,34 @@
     height: 2.5rem;
     width: 100%;
     padding: 20px 0;
+}
+
+.DetailsProduct .btn-addCart{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 3px solid #898989;
+    height: 2.5rem;
+    width: inherit;
+    padding: 20px 10px;
+}
+
+.DetailsProduct .btn-buyNow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gotham-Medium;
+    font-size: 1rem;
+    background-color: #bd945f;
+    border: 3px solid #bd945f;
+    height: 2.5rem;
+    width: 42%;
+    padding: 20px 10px;
+    margin-left: 20px;
+    color: #fff;
 }
 
 .DetailsProduct .btn-tt button {
