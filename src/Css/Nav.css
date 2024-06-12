@@ -45,3 +45,32 @@
     left: 0%;
     /* background-color: green ; */
 }
+
+.navbar .cart span{
+    top: 9px;
+    right: -3px;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    place-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 0.75rem;
+    min-width: 20px;
+    line-height: 1;
+    padding: 0px 6px;
+    height: 20px;   
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgb(253, 83, 97);
+    color: rgb(255, 255, 255);
+    transform: scale(1) translate(50%, -50%);
+    transform-origin: 100% 0%;
+    
+}
+.navbar .cart .n p{
+ margin: auto;
+ color: aliceblue;
+}
