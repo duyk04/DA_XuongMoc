@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import axios from '../api/api_products'
 import useFetchData from '../hook/useFetchData';
 import SliderCustom from './SliderCustom';
+import { Link } from 'react-router-dom';
 
 
 function OutstandingProducts() {
@@ -27,6 +28,10 @@ function OutstandingProducts() {
     //     // Gọi API khi component được mount
     //     getProducts();
     // }, []);
+
+    const handleClick = (item) => {
+        // console.log(item);
+    }
 
     useEffect(() => {
         // Lọc dữ liệu có classify = 5 sau khi nhận dữ liệu từ API
@@ -55,15 +60,18 @@ function OutstandingProducts() {
             <SliderCustom autoplay={false} autoplaySpeed={0} speed={700} slidesToShow={4} infinite={true} slidesToScroll={4} btnArrow={'block'} >
                 {/* <Products /> */}
                 {filteredData.map((item, index) => (
-                    <div className='col-md-3 cards' key={index}>
-                        <a href='#'>
+                    <Link className='col-md-3 cards' key={index} onClick={() => handleClick(item)}
+                        to={'/DetailsProduct'}
+                        state={item}
+                    >
+                        <div>
                             <div className='d-flex justify-content-center pt-4'>
                                 <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
                                     <img src={item.url_image} alt={item.name} className='img-hover' />
                                 </div>
                             </div>
                             <p className='mb-1 text-uppercase'>{item.name}</p>
-                        </a>
+                        </div>
                         <div>
                             {renderStars(item.star)}
                         </div>
@@ -71,7 +79,7 @@ function OutstandingProducts() {
                             {item.description.size}
                         </p>
                         <p className='mt-0'>{formatPrice(parseInt(item.price))} VND</p>
-                    </div>
+                    </Link>
                 ))}
             </SliderCustom>
 
