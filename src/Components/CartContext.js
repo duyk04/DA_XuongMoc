@@ -5,7 +5,7 @@ import useLocalStorage from '../hook/useLocalStorage';
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useLocalStorage('cart', []);
+    const [cart, setCart, removeItem] = useLocalStorage('cart', []);
 
     const addToCart = (item) => {
         const existingItemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
@@ -21,11 +21,15 @@ export const CartProvider = ({ children }) => {
             setCart(updatedCart);
         }
     };
+
+    const removeFromCart = (id) => {
+        // Lọc ra sản phẩm có id khác với id được truyền vào
+        const updatedCart = cart.filter(item => item.id !== id);
+        setCart(updatedCart);
+    };
     
-
-
     return (
-        <CartContext.Provider value={{ cart, addToCart }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart  }}>
             {children}
         </CartContext.Provider>
     );
