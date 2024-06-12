@@ -18,43 +18,45 @@ import DetailsProduct from './Components/DetailsProduct';
 import ScrollToTop from './hook/ScrollToTop';
 import CircularIndeterminate from './hook/CircularIndeterminate';
 import ScrollToTopButton from './hook/ScrollToTopButton';
+import Cart from './Components/Cart';
+import { CartProvider } from './Components/CartContext';
 
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
-				{/* Nav */}
-				<ScrollToTop />
-				<CircularIndeterminate/>
-				<Nav />
-				<Routes	>
-					<Route path='/Home' element={<Home />}></Route>
-					<Route path='/Introduce' element={<Introduce />}></Route>
-					{/* <Route path='/Products' element={<Products />}></Route> */}
-					<Route path='/Products' element={<Products />}>
-						<Route path='ListRoom' element={<ListRoom />} />
-					</Route>
+			<CartProvider>
+				<BrowserRouter>
+					{/* Nav */}
+					<ScrollToTop />
+					<CircularIndeterminate />
+					<Nav />
+					<Routes	>
+						<Route path='/Home' element={<Home />}></Route>
+						<Route path='/Introduce' element={<Introduce />}></Route>
+						{/* <Route path='/Products' element={<Products />}></Route> */}
+						<Route path='/Products' element={<Products />}>
+							<Route path='ListRoom' element={<ListRoom />} />
+						</Route>
 
-					{/* <Route path='/Products/ListRoom' element={<ListRoom />} /> */}
-					{/* <Route path='ListRoom' element={<ListRoom />} /> */}
+						{/* <Route path='/Products/ListRoom' element={<ListRoom />} /> */}
+						{/* <Route path='ListRoom' element={<ListRoom />} /> */}
 
-					<Route path='/New' element={<New />}></Route>
-					<Route path='/NewDetail' element={<NewDetail />}></Route>
-					<Route path='/Partner' element={<Partner />}></Route>
-					<Route path='/Contact' element={<Contact />}></Route>
+						<Route path='/New' element={<New />}></Route>
+						<Route path='/NewDetail' element={<NewDetail />}></Route>
+						<Route path='/Partner' element={<Partner />}></Route>
+						<Route path='/Contact' element={<Contact />}></Route>
 
-					<Route path='/DetailsProduct' element={<DetailsProduct />}></Route>
+						<Route path='/DetailsProduct' element={<DetailsProduct />}></Route>
+						<Route path='/Cart' element={<Cart />}></Route>
 
-					<Route index element={<Navigate to='/Home' />} />
-					<Route path='*' element={<NotFound />}></Route>
-				</Routes>
-				{/* footer */}
-				<Footer />
-				<ScrollToTopButton />
-			</BrowserRouter>
-			{/* <Nav />
-			<Home />
-			<Footer /> */}
+						<Route index element={<Navigate to='/Home' />} />
+						<Route path='*' element={<NotFound />}></Route>
+					</Routes>
+					{/* footer */}
+					<Footer />
+					<ScrollToTopButton />
+				</BrowserRouter>
+			</CartProvider>
 		</div>
 	);
 }
