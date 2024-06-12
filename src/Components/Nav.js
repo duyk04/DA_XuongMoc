@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../Css/Nav.css'
-function Nav() {
+import CartContext from './CartContext';
+function Nav () {
     const location = useLocation();
     const [activePath, setActivePath] = useState(location.pathname);
 
     useEffect(() => {
         setActivePath(location.pathname);
+        
     }, [location.pathname]);
 
+    const { cart } = useContext(CartContext);
 
     return (
         <div>
@@ -39,6 +42,11 @@ function Nav() {
                                 </li>
                                 <li className={`nav-item mx-4 ${activePath === '/Contact' ? 'nav-active' : ''}`}>
                                     <Link to="/Contact" >Liên hệ</Link>
+                                </li>
+                                <li className="nav-item mx-4">
+                                    <Link className='cart position-relative' to={"/Cart"}><i className="fa-solid fa-cart-shopping fa-xl" style={{ color: "#bd945f" }}></i>
+                                        <span className='position-absolute m-0 n'>{cart.length}</span>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
