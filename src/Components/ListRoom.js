@@ -182,14 +182,14 @@ function ListRoom() {
                         ) : (
                             filterePrice.length > 0 ? filterePrice.map((item, index) => (
                                 <div className='col-md-3' key={index}>
-                                    <a href='#'>
+                                    <Link to={"/DetailsProduct"} state={item}>
                                         <div className='d-flex justify-content-center'>
                                             <div style={{ overflow: 'hidden', width: 270, height: 270 }}>
                                                 <img src={item.url_image} alt={item.name} className='img-hover' />
                                             </div>
                                         </div>
                                         <p className='mb-1 text-uppercase'>{item.name}</p>
-                                    </a>
+                                    </Link>
                                     <div>
                                         {renderStars(item.star)}
                                     </div>
