@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Css/New.css'
+import { Link } from 'react-router-dom'
 function New() {
     return (
         <>
@@ -9,11 +10,11 @@ function New() {
                         <h4 className='text-center'>Tin tức</h4>
                     </div>
                     <div className='row mx-4'>
-                        <div className='col-md-4 px-4 pt-4'>
+                        <Link to={'/NewDetail'} className='col-md-4 px-4 pt-4'>
                             <img src='../images/AnhCatTC/New/new_1.png' alt='img' className='w-100' />
                             <h5>NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h5>
                             <p>Những căn hộ chung cư mini, có diện tích nhỏ ngày càng trở nên nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí "hạn hẹp".</p>
-                        </div>
+                        </Link>
                         <div className='col-md-4 px-4 pt-4'>
                             <img src='../images/AnhCatTC/New/new_2.png' alt='img' className='w-100' />
                             <h5>25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h5>
