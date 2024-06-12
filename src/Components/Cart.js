@@ -1,10 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react'
 import '../Css/Cart.css'
 import CartContext from './CartContext';
+import { Snackbar } from '@mui/material';
 
 function Cart() {
-    const { cart } = useContext(CartContext);
+    const { cart, removeFromCart  } = useContext(CartContext);
     const [productQuantities, setProductQuantities] = useState({});
+
+    useEffect(() => {
+        // Khởi tạo productQuantities từ cart
+        const initialQuantities = {};
+        cart.forEach(item => {
+            initialQuantities[item.id] = item.quantity || 1;
+        });
+        setProductQuantities(initialQuantities);
+    }, [cart]);
 
     const handleInput = (e, productId) => {
         const { value } = e.target;
@@ -26,12 +36,11 @@ function Cart() {
         setProductQuantities(updatedQuantities);
     };
 
-
     useEffect(() => {
         Object.keys(productQuantities).forEach(productId => {
             const quantity = parseInt(productQuantities[productId]);
             if (quantity === 0) {
-                alert("Bạn có muốn xóa sản phẩm này không?");
+                handleRemoveProduct(productId)
                 setProductQuantities(prevQuantities => ({
                     ...prevQuantities,
                     [productId]: 1 // hoặc bất kỳ giá trị mặc định nào bạn muốn
@@ -39,11 +48,19 @@ function Cart() {
             }
         });
     }, [productQuantities]);
-    
+
+    const handleRemoveProduct = (id) =>{
+         // eslint-disable-next-line no-restricted-globals
+        const confirmation = confirm('Bạn có muốn xóa sản phẩm này không ?');
+        if (confirmation === true){
+            removeFromCart(id)
+        }
+    }
 
     const formatPrice = (price) => {
         return price.toLocaleString('vi-VN');
     };
+
     return (
         <>
             <div className='Cart d-flex justify-content-center'>
@@ -66,9 +83,7 @@ function Cart() {
                                 <tr key={index}>
                                     <th scope="row" className='my-auto'>{index + 1}</th>
                                     <td className='d-flex'>
-
-                                        <img className='me-2' src={item.url_image} />
-
+                                        <img className='me-2' src={item.url_image} alt={item.name} />
                                         <div>
                                             <p className='namePr mb-2 text-uppercase'>{item.name}</p>
                                             <p className='sizePr'>{item.description.size}</p>
@@ -77,16 +92,15 @@ function Cart() {
                                     <td>{formatPrice(parseInt(item.price))} </td>
                                     <td>
                                         <div>
-                                            <button type="button" onClick={() => decrement(item.id)}><i className="fa-solid fa-chevron-left"></i></button>
-
-                                            <input type='text' value={productQuantities[item.id] || 0} onInput={(e) => handleInput(e, item.id)} />
-
-                                            <button type="button" onClick={() => increment(item.id)}><i className="fa-solid fa-chevron-right"></i></button>
-
+                                            <button type="button" className='btn_arrow' onClick={() => decrement(item.id)}><i className="fa-solid fa-chevron-left"></i></button>
+                                            <input type='text' value={productQuantities[item.id] || 1} onInput={(e) => handleInput(e, item.id)} />
+                                            <button type="button" className='btn_arrow' onClick={() => increment(item.id)}><i className="fa-solid fa-chevron-right"></i></button>
                                         </div>
                                     </td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
+                                    <td>{formatPrice(parseInt(item.price) * (productQuantities[item.id] || 1))} VNĐ</td>
+                                    <td>
+                                        <button type="button" className='btn_delete' onClick={() => handleRemoveProduct(item.id)}><i className="fa-solid fa-trash-can fa-xl pe-2" style={{color: "#ff0000"}}></i>Xóa</button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
@@ -94,7 +108,7 @@ function Cart() {
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default Cart
+export default Cart;
