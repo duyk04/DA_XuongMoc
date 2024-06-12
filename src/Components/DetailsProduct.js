@@ -24,7 +24,7 @@ function DetailsProduct() {
 
 
 	const { cart, addToCart } = useContext(CartContext);
-	console.log(cart);
+	// console.log(cart);
 		
 
 	return (
