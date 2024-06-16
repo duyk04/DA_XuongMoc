@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import '../Css/DetailsProduct.css'
 import CartContext from './CartContext';
+import CustomSnackbar from '../hook/CustomSnackbar';
 
 function DetailsProduct() {
 	const location = useLocation();
@@ -25,10 +26,35 @@ function DetailsProduct() {
 
 	const { cart, addToCart } = useContext(CartContext);
 	// console.log(cart);
-		
+
+	const handleAddToCart = (item) => {
+		addToCart(item)
+		handleShowSnackbar('slide')
+	}
+
+	const [snackbarOpen, setSnackbarOpen] = useState(false);
+	const [transitionType, setTransitionType] = useState('fade');
+
+	const handleShowSnackbar = (type) => {
+		setTransitionType(type);
+		setSnackbarOpen(true);
+	};
+
+	const handleCloseSnackbar = () => {
+		setSnackbarOpen(false);
+	};
 
 	return (
 		<>
+			<CustomSnackbar
+				open={snackbarOpen}
+				message="Thêm vào giỏ hàng thành công"
+				onClose={handleCloseSnackbar}
+				transition={transitionType}
+				backgroundColor="#edf7ed"
+				color="black"
+				top='105px'
+			/>
 			<div className='DetailsProduct d-flex flex-column align-items-center'>
 				<div className='box-container my-5'>
 					<div className='m-5'>
@@ -64,8 +90,9 @@ function DetailsProduct() {
 										Bảo hành sản phẩm lên tới 36 tháng
 									</button>
 									<div className='d-flex'>
-										<button type='button' className='btn-addCart' onClick={() => addToCart(state)}><i className="fa-solid fa-cart-plus fa-xl px-2" style={{ color: '#bd945f' }}></i>Thêm vào giỏ hàng</button>
-										<button type='button' className='btn-buyNow'>Mua ngay</button>
+										<button type='button' className='btn-addCart' onClick={() => handleAddToCart(state)}><i className="fa-solid fa-cart-plus fa-xl px-2" style={{ color: '#bd945f' }}></i>Thêm vào giỏ hàng</button>
+										{/* <button type='button' className='btn-buyNow'>Mua ngay</button> */}
+										<Link to={'/Payment'} state={{ list: [state], total: parseInt(state.price) }} className='btn-buyNow'>Mua ngay</Link>									
 									</div>
 
 								</div>
@@ -104,14 +131,14 @@ function DetailsProduct() {
 					</div>
 					<div className='row mx-5 mb-4'>
 						<div className='col-md-3'>
-							<a href='#'>
+							<Link to={'List_Room'}>
 								<div className='d-flex justify-content-center'>
 									<div className='w-100' style={{ overflow: 'hidden' }}>
 										<img loading='lazy' src='../images/AnhCatTC/Products/phong_khach/banuongnuoc_1.png' alt='img' className='img-hover w-100' />
 									</div>
 								</div>
 								<p className='mb-1 text-uppercase'>Bàn uống nước</p>
-							</a>
+							</Link>
 							<div>
 								<span>
 									<i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
@@ -135,14 +162,14 @@ function DetailsProduct() {
 							<p className='mt-0'>8.999.999 VND</p>
 						</div>
 						<div className='col-md-3'>
-							<a href='#'>
+							<Link to={'List_Room'}>
 								<div className='d-flex justify-content-center'>
 									<div className='w-100' style={{ overflow: 'hidden' }}>
 										<img loading='lazy' src='../images/AnhCatTC/Products/phong_khach/banuongnuoc_2.png' alt='img' className='img-hover w-100' />
 									</div>
 								</div>
 								<p className='mb-1 text-uppercase'>Bàn uống nước 2</p>
-							</a>
+							</Link>
 							<div>
 								<span>
 									<i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
@@ -166,14 +193,14 @@ function DetailsProduct() {
 							<p className='mt-0'>3.999.999 VND</p>
 						</div>
 						<div className='col-md-3'>
-							<a href='#'>
+							<Link to={'List_Room'}>
 								<div className='d-flex justify-content-center'>
 									<div className='w-100' style={{ overflow: 'hidden' }}>
 										<img loading='lazy' src='../images/AnhCatTC/Products/phong_khach/ketivi.png' alt='img' className='img-hover w-100' />
 									</div>
 								</div>
 								<p className='mb-1 text-uppercase'>Kệ TV</p>
-							</a>
+							</Link>
 							<div>
 								<span>
 									<i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
@@ -197,14 +224,14 @@ function DetailsProduct() {
 							<p className='mt-0'>12.999.999 VND</p>
 						</div>
 						<div className='col-md-3'>
-							<a href='#'>
+							<Link to={'List_Room'}>
 								<div className='d-flex justify-content-center'>
 									<div className='w-100' style={{ overflow: 'hidden' }}>
 										<img loading='lazy' src='../images/AnhCatTC/Products/phong_khach/kededo.png' alt='img' className='img-hover w-100' />
 									</div>
 								</div>
 								<p className='mb-1 text-uppercase'>Kệ để đồ</p>
-							</a>
+							</Link>
 							<div>
 								<span>
 									<i className="fa-solid fa-star fa-lg" style={{ color: "#FFD43B" }} />
