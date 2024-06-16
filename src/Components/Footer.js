@@ -30,7 +30,7 @@ function Footer() {
                             <li>
                                 <p>
                                     <i className="fa-solid fa-location-dot pe-2" style={{ color: "#ffffff", width: 26 }} />
-                                    Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội
+                                    <a href='https://maps.app.goo.gl/hkik46oGUgvAkVmX8' target='blank'>25 P. Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội, Việt Nam</a>
                                 </p>
                             </li>
                         </ul>
