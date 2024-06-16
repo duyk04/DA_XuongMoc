@@ -372,7 +372,7 @@ function Home() {
                         <div className='col-md-7'>
                             <div className='position-relative'>
                                 <div className='img'>
-                                    <a href='#'>
+                                    <a href='*'>
                                         <img src='../images/AnhCatTC/tin-tuc/tintuc.jpg' alt='img' className='w-100 h-100' />
                                     </a>
                                 </div>
@@ -431,7 +431,7 @@ function Home() {
                     <div>
                         <div className="container text-center my-3">
                             <div className="row mx-auto my-auto justify-content-center">
-                                <SliderCustom infinite={true} autoplay={true}>
+                                <SliderCustom infinite={true} autoplay={true} autoplaySpeed={4000}>
                                     <div className="col-md-2">
                                         <div className="card border-0">
                                             <div className="card-img">
