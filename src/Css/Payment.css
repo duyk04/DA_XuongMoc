@@ -1,0 +1,57 @@
+.Payment {
+    background-color: #f3f3f3;
+    min-height: 518px;
+    position: relative;
+}
+
+.Payment .box-container {
+    width: 70%;
+    background-color: #fff;
+}
+.Payment h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+}
+
+.Payment hr {
+    height: 3px;
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+    color: #bd945f;
+}
+.Payment table{
+    width: 95%;
+    margin: auto;
+}
+
+.Payment table img {
+    width: 80px;
+    height: 80px;
+}
+
+.Payment .w-95{
+    width: 95%;
+}
+
+.Payment .btn_buy{
+    width: 180px;
+    border-radius: 2px;
+}
+.Payment span{
+    color: #8d8d8d;
+    font-weight: 200;
+}
+
+.Payment /* Đối với Chrome, Safari, Edge, và Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
