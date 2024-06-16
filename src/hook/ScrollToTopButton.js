@@ -11,7 +11,7 @@ const ScrollToTopButton = () => {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     
-    if (scrolled > (documentHeight - windowHeight) * 2 / 5) {
+    if (scrolled > (documentHeight - windowHeight) * 2 / 10) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
