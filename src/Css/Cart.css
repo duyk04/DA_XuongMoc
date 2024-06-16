@@ -1,11 +1,14 @@
-.Cart{
+.Cart {
     background-color: #f3f3f3;
     min-height: 518px;
+    position: relative;
 }
+
 .Cart .box-container {
     width: 70%;
     background-color: #fff;
 }
+
 .Cart h4 {
     text-transform: uppercase;
     font-family: Gotham-Ultra;
@@ -15,6 +18,7 @@
     font-size: 1.8rem;
     text-align: start;
 }
+
 .Cart h4:after {
     content: "";
     position: absolute;
@@ -25,50 +29,79 @@
     border-top: 0.5rem solid #bd945f;
 }
 
-.Cart hr{
-    height: 3px;   
+.Cart hr {
+    height: 3px;
     width: 95%;
     margin: auto;
     margin-top: 2rem;
-    color: #bd945f;  
+    color: #bd945f;
 }
 
-.Cart table{
+.Cart table {
     width: 95%;
     margin: auto;
+    min-height: 250px
 }
 
-.Cart table img{
+.Cart table img {
     width: 80px;
     height: 80px;
 }
-.Cart table th, tr{
+
+.Cart table th,
+tr {
     vertical-align: middle;
 }
 
-.Cart .namePr{
+.Cart .namePr {
     text-align: start;
     font-family: Gotham-Medium;
 }
-.Cart .sizePr{
+
+.Cart .sizePr {
     font-size: 0.8rem;
     color: #777777;
     text-align: start;
     font-family: Gotham-Medium;
 }
-.Cart table input[type="text"]{
-    width: 50px ;
+
+.Cart table input[type="text"] {
+    width: 50px;
     border-bottom: 1px solid #bd945f;
     border-top: 1px solid #bd945f;
     text-align: center;
 }
-.Cart .btn_arrow{
+
+.Cart .btn_arrow {
     border: 1px solid #bd945f;
     width: 24px;
 }
-.Cart .btn_delete{
+
+.Cart .btn_delete {
     background-color: #fff;
 }
-.Cart tr:hover .btn_delete{
+
+.Cart tr:hover .btn_delete {
     background-color: #ececec;
+}
+
+.Cart .nav_payments {
+    position: sticky;
+    bottom: 0;
+    border: 1px solid #bd945f;
+    border-radius: 2px;
+    box-shadow: 1px -5px 20px 6px rgba(182, 150, 8, 0.2);
+}
+
+.Cart .nav_payments p {
+    font-family: Gotham-Medium;
+}
+
+.Cart .price-total {
+    color: red;
+    font-size: 1.2rem
+}
+
+.Cart .btn_buy{
+    width: 150px;
 }
