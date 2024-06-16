@@ -393,7 +393,7 @@ footer {
     height: 300px;
 }
 
-footer p {
+footer p , p a {
     color: #fff;
     text-align: left;
     font-family: Gotham-Thin;
@@ -401,7 +401,7 @@ footer p {
 
 }
 
-footer p:hover {
+footer p:hover, p a:hover {
     color: #adadad;
     cursor: pointer;
 }
@@ -426,4 +426,15 @@ footer .name1 {
     /* CSS properties */
     font-family: Gotham-Medium;
     font-size: 1.3rem;
+}
+
+.namePr{
+    text-align: start;
+    font-family: Gotham-Medium;
+}
+.sizePr{
+    font-size: 0.8rem;
+    color: #777777;
+    text-align: start;
+    font-family: Gotham-Medium;
 }
