@@ -93,19 +93,25 @@ function Payment() {
                         Hóa đơn
                         <div className='row'>
                             <div className='col-md-8 text-start'>
-                                Ghi chú:
-                                <input
-                                    type='text'
-                                    className='ps-2'
-                                    name='phone'
-                                    value={phoneNumber}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    placeholder={placeholder}
-                                    required
-                                    style={{ width: '300px' }}
-                                /><br/>
-                                <input type='text' className='ms-5 ps-4' name='name' placeholder='Tên của bạn'/>
+                                Ghi chú:<br />
+                                <label>
+                                    Họ Tên: <input type='text' className='ps-4' name='name' placeholder='Tên của bạn' required style={{ width: '300px' }} />
+                                </label><br />
+                                <label>
+                                    Số điện thoại:
+                                    <input
+                                        type='number'
+                                        className='ps-4'
+                                        name='phone'
+                                        value={phoneNumber}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        placeholder={placeholder}
+                                        required
+                                        style={{ width: '300px' }}
+                                    />
+                                </label>
+
                             </div>
                             <div className='col-md-4'>
                                 <div className='row'>
