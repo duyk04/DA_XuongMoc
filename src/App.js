@@ -20,6 +20,7 @@ import CircularIndeterminate from './hook/CircularIndeterminate';
 import ScrollToTopButton from './hook/ScrollToTopButton';
 import Cart from './Components/Cart';
 import { CartProvider } from './Components/CartContext';
+import Payment from './Components/Payment ';
 
 function App() {
 	return (
@@ -48,7 +49,8 @@ function App() {
 
 						<Route path='/DetailsProduct' element={<DetailsProduct />}></Route>
 						<Route path='/Cart' element={<Cart />}></Route>
-
+						<Route path='/Payment' element={<Payment />}></Route>
+						
 						<Route index element={<Navigate to='/Home' />} />
 						<Route path='*' element={<NotFound />}></Route>
 					</Routes>
